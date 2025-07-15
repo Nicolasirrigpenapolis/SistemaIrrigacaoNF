@@ -4,14 +4,14 @@ Begin VB.Form frmProdutos
    ClientHeight    =   8520
    ClientLeft      =   1830
    ClientTop       =   1395
-   ClientWidth     =   15960
+   ClientWidth     =   16500
    ForeColor       =   &H80000008&
    KeyPreview      =   -1  'True
    LinkTopic       =   "Produtos"
    LockControls    =   -1  'True
    MDIChild        =   -1  'True
    ScaleHeight     =   8520
-   ScaleWidth      =   15960
+   ScaleWidth      =   16500
    Begin IRRIG.GPainel Painel 
       Height          =   8490
       Index           =   0
@@ -63,83 +63,47 @@ Begin VB.Form frmProdutos
          TabCaption(0)   =   "&1 - Dados Principais"
          Tab(0).ControlEnabled=   0   'False
          Tab(0).Control(0)=   "Label(32)"
-         Tab(0).Control(0).Enabled=   0   'False
          Tab(0).Control(1)=   "Label(29)"
-         Tab(0).Control(1).Enabled=   0   'False
          Tab(0).Control(2)=   "Label(28)"
-         Tab(0).Control(2).Enabled=   0   'False
          Tab(0).Control(3)=   "Linha(1)"
-         Tab(0).Control(3).Enabled=   0   'False
          Tab(0).Control(4)=   "labFdo19"
-         Tab(0).Control(4).Enabled=   0   'False
          Tab(0).Control(5)=   "Label(21)"
-         Tab(0).Control(5).Enabled=   0   'False
          Tab(0).Control(6)=   "labFdo18"
-         Tab(0).Control(6).Enabled=   0   'False
          Tab(0).Control(7)=   "Label(20)"
-         Tab(0).Control(7).Enabled=   0   'False
          Tab(0).Control(8)=   "Label(19)"
-         Tab(0).Control(8).Enabled=   0   'False
          Tab(0).Control(9)=   "Label(18)"
-         Tab(0).Control(9).Enabled=   0   'False
          Tab(0).Control(10)=   "Label(15)"
-         Tab(0).Control(10).Enabled=   0   'False
          Tab(0).Control(11)=   "Label(14)"
-         Tab(0).Control(11).Enabled=   0   'False
          Tab(0).Control(12)=   "Label(13)"
-         Tab(0).Control(12).Enabled=   0   'False
          Tab(0).Control(13)=   "Label(12)"
-         Tab(0).Control(13).Enabled=   0   'False
          Tab(0).Control(14)=   "Label(11)"
-         Tab(0).Control(14).Enabled=   0   'False
          Tab(0).Control(15)=   "Label(10)"
-         Tab(0).Control(15).Enabled=   0   'False
          Tab(0).Control(16)=   "Label(9)"
-         Tab(0).Control(16).Enabled=   0   'False
          Tab(0).Control(17)=   "Label(8)"
-         Tab(0).Control(17).Enabled=   0   'False
          Tab(0).Control(18)=   "Label(7)"
-         Tab(0).Control(18).Enabled=   0   'False
          Tab(0).Control(19)=   "Label(6)"
-         Tab(0).Control(19).Enabled=   0   'False
          Tab(0).Control(20)=   "Label(5)"
-         Tab(0).Control(20).Enabled=   0   'False
          Tab(0).Control(21)=   "Label(4)"
-         Tab(0).Control(21).Enabled=   0   'False
          Tab(0).Control(22)=   "Label(3)"
-         Tab(0).Control(22).Enabled=   0   'False
          Tab(0).Control(23)=   "Label(2)"
-         Tab(0).Control(23).Enabled=   0   'False
          Tab(0).Control(24)=   "Label(1)"
-         Tab(0).Control(24).Enabled=   0   'False
          Tab(0).Control(25)=   "labFdo12"
-         Tab(0).Control(25).Enabled=   0   'False
          Tab(0).Control(26)=   "Linha(0)"
-         Tab(0).Control(26).Enabled=   0   'False
          Tab(0).Control(27)=   "labFdo10"
-         Tab(0).Control(27).Enabled=   0   'False
          Tab(0).Control(28)=   "labFdo8"
-         Tab(0).Control(28).Enabled=   0   'False
          Tab(0).Control(29)=   "labFdo7"
-         Tab(0).Control(29).Enabled=   0   'False
          Tab(0).Control(30)=   "labFdo5"
-         Tab(0).Control(30).Enabled=   0   'False
          Tab(0).Control(31)=   "labFdo2"
-         Tab(0).Control(31).Enabled=   0   'False
          Tab(0).Control(32)=   "txtCp(31)"
          Tab(0).Control(32).Enabled=   0   'False
          Tab(0).Control(33)=   "txtCp(30)"
          Tab(0).Control(33).Enabled=   0   'False
          Tab(0).Control(34)=   "ChkCp(6)"
-         Tab(0).Control(34).Enabled=   0   'False
          Tab(0).Control(35)=   "txtCp(27)"
-         Tab(0).Control(35).Enabled=   0   'False
          Tab(0).Control(36)=   "txtCp(26)"
          Tab(0).Control(36).Enabled=   0   'False
          Tab(0).Control(37)=   "ChkCp(5)"
-         Tab(0).Control(37).Enabled=   0   'False
          Tab(0).Control(38)=   "ChkCp(4)"
-         Tab(0).Control(38).Enabled=   0   'False
          Tab(0).Control(39)=   "ChkCp(3)"
          Tab(0).Control(39).Enabled=   0   'False
          Tab(0).Control(40)=   "ChkCp(2)"
@@ -147,19 +111,16 @@ Begin VB.Form frmProdutos
          Tab(0).Control(41)=   "ChkCp(1)"
          Tab(0).Control(41).Enabled=   0   'False
          Tab(0).Control(42)=   "txtCp(19)"
-         Tab(0).Control(42).Enabled=   0   'False
          Tab(0).Control(43)=   "bottxtCampo19(2)"
          Tab(0).Control(43).Enabled=   0   'False
          Tab(0).Control(44)=   "ChkCp(0)"
          Tab(0).Control(44).Enabled=   0   'False
          Tab(0).Control(45)=   "txtCp(18)"
-         Tab(0).Control(45).Enabled=   0   'False
          Tab(0).Control(46)=   "bottxtCampo18(2)"
          Tab(0).Control(46).Enabled=   0   'False
          Tab(0).Control(47)=   "bottxtCampo18(1)"
          Tab(0).Control(47).Enabled=   0   'False
          Tab(0).Control(48)=   "txtCp(17)"
-         Tab(0).Control(48).Enabled=   0   'False
          Tab(0).Control(49)=   "txtCp(16)"
          Tab(0).Control(49).Enabled=   0   'False
          Tab(0).Control(50)=   "txtCp(15)"
@@ -167,23 +128,18 @@ Begin VB.Form frmProdutos
          Tab(0).Control(51)=   "txtCp(14)"
          Tab(0).Control(51).Enabled=   0   'False
          Tab(0).Control(52)=   "txtCp(12)"
-         Tab(0).Control(52).Enabled=   0   'False
          Tab(0).Control(53)=   "bottxtCampo12(2)"
          Tab(0).Control(53).Enabled=   0   'False
          Tab(0).Control(54)=   "bottxtCampo12(1)"
          Tab(0).Control(54).Enabled=   0   'False
          Tab(0).Control(55)=   "txtCp(11)"
-         Tab(0).Control(55).Enabled=   0   'False
          Tab(0).Control(56)=   "txtCp(10)"
-         Tab(0).Control(56).Enabled=   0   'False
          Tab(0).Control(57)=   "bottxtCampo10(2)"
          Tab(0).Control(57).Enabled=   0   'False
          Tab(0).Control(58)=   "bottxtCampo10(1)"
          Tab(0).Control(58).Enabled=   0   'False
          Tab(0).Control(59)=   "txtCp(9)"
-         Tab(0).Control(59).Enabled=   0   'False
          Tab(0).Control(60)=   "txtCp(8)"
-         Tab(0).Control(60).Enabled=   0   'False
          Tab(0).Control(61)=   "bottxtCampo8(2)"
          Tab(0).Control(61).Enabled=   0   'False
          Tab(0).Control(62)=   "bottxtCampo8(1)"
@@ -195,7 +151,6 @@ Begin VB.Form frmProdutos
          Tab(0).Control(65)=   "txtCp(6)"
          Tab(0).Control(65).Enabled=   0   'False
          Tab(0).Control(66)=   "txtCp(5)"
-         Tab(0).Control(66).Enabled=   0   'False
          Tab(0).Control(67)=   "bottxtCampo5(0)"
          Tab(0).Control(67).Enabled=   0   'False
          Tab(0).Control(68)=   "txtCp(4)"
@@ -203,28 +158,20 @@ Begin VB.Form frmProdutos
          Tab(0).Control(69)=   "txtCp(3)"
          Tab(0).Control(69).Enabled=   0   'False
          Tab(0).Control(70)=   "txtCp(2)"
-         Tab(0).Control(70).Enabled=   0   'False
          Tab(0).Control(71)=   "bottxtCampo2(2)"
          Tab(0).Control(71).Enabled=   0   'False
          Tab(0).Control(72)=   "bottxtCampo2(1)"
          Tab(0).Control(72).Enabled=   0   'False
          Tab(0).Control(73)=   "txtCp(1)"
-         Tab(0).Control(73).Enabled=   0   'False
          Tab(0).Control(74)=   "txtCp(0)"
-         Tab(0).Control(74).Enabled=   0   'False
          Tab(0).Control(75)=   "Botao(0)"
-         Tab(0).Control(75).Enabled=   0   'False
          Tab(0).Control(76)=   "Botao(1)"
-         Tab(0).Control(76).Enabled=   0   'False
          Tab(0).Control(77)=   "Botao(2)"
-         Tab(0).Control(77).Enabled=   0   'False
          Tab(0).ControlCount=   78
          TabCaption(1)   =   "&2 - Receita"
          Tab(1).ControlEnabled=   0   'False
          Tab(1).Control(0)=   "Label(17)"
-         Tab(1).Control(0).Enabled=   0   'False
          Tab(1).Control(1)=   "Grid(0)"
-         Tab(1).Control(1).Enabled=   0   'False
          Tab(1).ControlCount=   2
          TabCaption(2)   =   "&3 - Contabilidade"
          Tab(2).ControlEnabled=   -1  'True
@@ -289,14 +236,15 @@ Begin VB.Form frmProdutos
          Tab(4).ControlCount=   1
          Begin IRRIG.GBotao Botao 
             Height          =   340
-            Index           =   2
-            Left            =   -68970
-            TabIndex        =   18
+            Index           =   0
+            Left            =   -67890
+            TabIndex        =   3
             TabStop         =   0   'False
-            Top             =   3360
+            Top             =   570
             Width           =   240
             _ExtentX        =   0
             _ExtentY        =   0
+            ForeColor       =   0
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "MS Sans Serif"
                Size            =   8.25
@@ -318,6 +266,7 @@ Begin VB.Form frmProdutos
             Width           =   240
             _ExtentX        =   0
             _ExtentY        =   0
+            ForeColor       =   0
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "MS Sans Serif"
                Size            =   8.25
@@ -331,14 +280,15 @@ Begin VB.Form frmProdutos
          End
          Begin IRRIG.GBotao Botao 
             Height          =   340
-            Index           =   0
-            Left            =   -67890
-            TabIndex        =   3
+            Index           =   2
+            Left            =   -68970
+            TabIndex        =   18
             TabStop         =   0   'False
-            Top             =   570
+            Top             =   3360
             Width           =   240
             _ExtentX        =   0
             _ExtentY        =   0
+            ForeColor       =   0
             BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
                Name            =   "MS Sans Serif"
                Size            =   8.25
@@ -2948,7 +2898,7 @@ Dim Sequencia_do_Produto As Long, Descricao As String, Sequencia_do_Grupo_Produt
 Dim Sequencia_do_SubGrupo_Produto As Integer, ultima_Compra As Variant, Quantidade_no_Estoque As Double
 Dim Quantidade_Minima As Double, ultimo_Movimento As Variant, Valor_de_Custo As Double
 Dim Margem_de_Lucro As Double, Sequencia_da_Unidade As Integer, Codigo_de_Barras As String
-Dim Sequencia_da_Classificacao As Integer, e_Materia_Prima As Boolean, Peso As Double
+Dim Sequencia_da_Classificacao As Integer, e_Materia_Prima As Boolean, peso As Double
 Dim Custo_Medio As Double, Usado As Boolean, ultimo_Fornecedor As Long
 Dim Tipo_do_Produto As Integer, Inativo As Boolean, Localizacao As String
 Dim Quantidade_Contabil As Double, Valor_Contabil_Atual As Double, Material_Adquirido_de_Terceiro As Boolean
@@ -3030,7 +2980,7 @@ Private Sub RepositionProduto()
   
 End Sub
 
-Private Function InfoProdutos(Sequencia_do_Produto As Long, Sequencia_da_Materia_Prima As Long, Quantidade_de_Materia_Prima As Double, Peso As Double, Custo As Double, Oq As String) As Variant
+Private Function InfoProdutos(Sequencia_do_Produto As Long, Sequencia_da_Materia_Prima As Long, Quantidade_de_Materia_Prima As Double, peso As Double, Custo As Double, Oq As String) As Variant
    Dim Materia As GRecordSet, Unidades As GRecordSet
 
    On Error Resume Next
@@ -3051,7 +3001,7 @@ Private Function InfoProdutos(Sequencia_do_Produto As Long, Sequencia_da_Materia
             InfoProdutos = 0
          End If
       Case "Peso"
-         InfoProdutos = Materia!Peso
+         InfoProdutos = Materia!peso
    End Select
    
     'Alteração
@@ -3127,7 +3077,7 @@ Private Sub CarregaTotalizador()
    TxtDtaAtual.Value = Date
 End Sub
 
-Private Sub Comandos(KeyAscii As Integer, Sequencia_do_Produto As Long, Sequencia_da_Materia_Prima As Long, Quantidade_de_Materia_Prima As Double, Peso As Double, Custo As Double)
+Private Sub Comandos(KeyAscii As Integer, Sequencia_do_Produto As Long, Sequencia_da_Materia_Prima As Long, Quantidade_de_Materia_Prima As Double, peso As Double, Custo As Double)
    On Error Resume Next
    
    If vgPWUsuario <> "JERONIMO" Then: Exit Sub
@@ -3162,7 +3112,7 @@ Private Function MegaPeso() As Double
             "INNER JOIN Unidades On P.[Seqüência da Unidade] = Unidades.[Seqüência da Unidade] " & _
             "WHERE [Sigla da Unidade] = 'KG'", , , , , , , , , , True)
             
-   If Tb.RecordCount > 0 Then MegaPeso = Tb!Peso
+   If Tb.RecordCount > 0 Then MegaPeso = Tb!peso
 
 End Function
 
@@ -3176,7 +3126,7 @@ Private Function UpDatePeso()
 Dim Tb As New GRecordSet
 Set Tb = vgDb.OpenRecordSet("SELECT * FROM [Itens do Conjunto] WHERE [Seqüência do Produto] = " & Sequencia_do_Produto)
 If Tb.RecordCount > 0 Then
-vgDb.Execute "Update [Itens do Conjunto] Set [Peso do Item] = " & Substitui(CStr(Peso), ",", ".", SO_UM) & " WHERE [Seqüência do Produto] = " & Sequencia_do_Produto
+vgDb.Execute "Update [Itens do Conjunto] Set [Peso do Item] = " & Substitui(CStr(peso), ",", ".", SO_UM) & " WHERE [Seqüência do Produto] = " & Sequencia_do_Produto
 End If
 End Function
 
@@ -3191,7 +3141,7 @@ End If
 End Function
 
 
-Private Function ValidaProduto2(Sequencia_do_Produto As Long, Sequencia_da_Materia_Prima As Long, Quantidade_de_Materia_Prima As Double, Peso As Double, Custo As Double) As Boolean 'produto
+Private Function ValidaProduto2(Sequencia_do_Produto As Long, Sequencia_da_Materia_Prima As Long, Quantidade_de_Materia_Prima As Double, peso As Double, Custo As Double) As Boolean 'produto
  Dim Tb As New GRecordSet
  
  Set Tb = vgDb.OpenRecordSet("SELECT * From Produtos Where [Seqüência do Produto] = " & Sequencia_da_Materia_Prima)
@@ -3296,12 +3246,12 @@ Public Sub ContaEstoque()
       Set Saidas = vgDb.OpenRecordSet("SELECT SUM(Quantidade) Qtd, [Seqüência da Matéria Prima] From [Receita Primaria] Left Join Orçamento On [Receita Primaria].[Seqüência do Orçamento] = Orçamento.[Seqüência do Orçamento] Where [Seqüência da Matéria Prima] = " & Sequencia_do_Produto & Filtro1() & " Group by [Seqüência da Matéria Prima]") 'Separado p/ Montar
       
       If Saidas2.RecordCount > 0 Then
-         Estoque = Estoque - Saidas2!qtd
-         vgDb.Execute "Update Produtos Set [Qtde Inicial] = " & Substitui(Saidas2!qtd, ",", ".", SO_UM) & " WHERE [Seqüência do Produto] = " & Sequencia_do_Produto
+         Estoque = Estoque - Saidas2!Qtd
+         vgDb.Execute "Update Produtos Set [Qtde Inicial] = " & Substitui(Saidas2!Qtd, ",", ".", SO_UM) & " WHERE [Seqüência do Produto] = " & Sequencia_do_Produto
       End If
       If Saidas.RecordCount > 0 Then
-         Estoque = Estoque - Saidas!qtd
-         vgDb.Execute "Update Produtos Set [Separado Montar] = " & Substitui(Saidas!qtd, ",", ".", SO_UM) & " WHERE [Seqüência do Produto] = " & Sequencia_do_Produto
+         Estoque = Estoque - Saidas!Qtd
+         vgDb.Execute "Update Produtos Set [Separado Montar] = " & Substitui(Saidas!Qtd, ",", ".", SO_UM) & " WHERE [Seqüência do Produto] = " & Sequencia_do_Produto
       End If
       If Produtos![Material Adquirido de Terceiro] Then
          Comprados = QtdeRecebida(Produtos![Seqüência do Produto])
@@ -3391,7 +3341,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Codigo_de_Barras = txtCampo(9).Value
          Sequencia_da_Classificacao = txtCampo(10).Value
          e_Materia_Prima = chkCampo(8).Value
-         Peso = txtCampo(0).Value
+         peso = txtCampo(0).Value
          Custo_Medio = IIf(vgSituacao = ACAO_INCLUINDO, 0, vgTb![Custo Médio])
          Usado = chkCampo(7).Value
          ultimo_Fornecedor = txtCampo(15).Value
@@ -3452,7 +3402,7 @@ Private Sub InicializaApelidos(vgComOQue As Integer)
          Codigo_de_Barras = IIf(IsNull(vgTb![Código de Barras]), "", vgTb![Código de Barras])
          Sequencia_da_Classificacao = IIf(IsNull(vgTb![Seqüência da Classificação]), 0, vgTb![Seqüência da Classificação])
          e_Materia_Prima = IIf(IsNull(vgTb![É Matéria Prima]), 0, vgTb![É Matéria Prima])
-         Peso = IIf(IsNull(vgTb!Peso), 0, vgTb!Peso)
+         peso = IIf(IsNull(vgTb!peso), 0, vgTb!peso)
          Custo_Medio = IIf(IsNull(vgTb![Custo Médio]), 0, vgTb![Custo Médio])
          Usado = IIf(IsNull(vgTb!Usado), 0, vgTb!Usado)
          ultimo_Fornecedor = IIf(IsNull(vgTb![Último Fornecedor]), 0, vgTb![Último Fornecedor])
@@ -3964,37 +3914,37 @@ Private Sub ExecutaPreValidacao()
    txtCampo(1).Enabled = Ok Or Not vgAlterar
    Ok = (Materia_Prima.RecordCount > 0)
    Label(17).Enabled = Ok And vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or (vgPWUsuario = "EDUARDO THEODORO") Or EstaEmIDE)
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(0).Locked = Not (vgAlterar And opcPainel1(0).Editable)
    opcPainel1(0).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or (vgPWUsuario = "EDUARDO THEODORO") Or EstaEmIDE)
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(1).Locked = Not (vgAlterar And opcPainel1(1).Editable)
    opcPainel1(1).Enabled = Ok Or Not vgAlterar
-   Ok = (False)
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(2).Locked = Not (vgAlterar And opcPainel1(2).Editable)
    opcPainel1(2).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" Or vgPWUsuario = "KENNEDY" Or vgPWUsuario = "YGOR" And vgSituacao = ACAO_INCLUINDO) Or EstaEmIDE())
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(3).Locked = Not (vgAlterar And opcPainel1(3).Editable)
    opcPainel1(3).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or EstaEmIDE())
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(4).Locked = Not (vgAlterar And opcPainel1(4).Editable)
    opcPainel1(4).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or EstaEmIDE())
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(5).Locked = Not (vgAlterar And opcPainel1(5).Editable)
    opcPainel1(5).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or (vgPWUsuario = "EDUARDO THEODORO") Or EstaEmIDE)
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(6).Locked = Not (vgAlterar And opcPainel1(6).Editable)
    opcPainel1(6).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or EstaEmIDE())
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(7).Locked = Not (vgAlterar And opcPainel1(7).Editable)
    opcPainel1(7).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or (vgPWUsuario = "EDUARDO THEODORO") Or EstaEmIDE)
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(8).Locked = Not (vgAlterar And opcPainel1(8).Editable)
    opcPainel1(8).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or EstaEmIDE())
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(9).Locked = Not (vgAlterar And opcPainel1(9).Editable)
    opcPainel1(9).Enabled = Ok Or Not vgAlterar
-   Ok = ((vgPWUsuario = "RODRIGO" And vgSituacao = ACAO_INCLUINDO) Or EstaEmIDE())
+   Ok = ((vgPWUsuario = "YGOR" Or vgPWUsuario = "JERONIMO") Or EstaEmIDE())
    opcPainel1(10).Locked = Not (vgAlterar And opcPainel1(10).Editable)
    opcPainel1(10).Enabled = Ok Or Not vgAlterar
    Ok = (vgPWUsuario = "YGOR" Or vgPWUsuario = "FABIANO REIS")
@@ -5272,7 +5222,7 @@ End Function
 Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, Optional ByVal vgItem As Long, Optional ByVal vgCol As Integer, Optional vgIsValid As Boolean, Optional ByRef vgColumn As Integer, Optional vgErrorMessage As String, Optional KeyCodeAscii As Integer, Optional Shift As Integer) As Variant
    Dim vgRetVal As Variant, vgRsError As GRecordSet, x As String, vgNVez As Integer
    Dim Sequencia_da_Materia_Prima As Long, Quantidade_de_Materia_Prima As Double
-   Dim Peso As Double, Custo As Double
+   Dim peso As Double, Custo As Double
    vgPriVez = True
    If vgOq = PREVALIDACOES Then
       vgRetVal = False
@@ -5290,10 +5240,10 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
       On Error Resume Next
       Select Case vgCol
          Case 3
-            vgRetVal = (InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, Peso, Custo, "Sigla"))
+            vgRetVal = (InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, peso, Custo, "Sigla"))
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
          Case 4
-            vgRetVal = Peso
+            vgRetVal = peso
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
          Case 5
             vgRetVal = Custo
@@ -5302,13 +5252,13 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
             vgRetVal = (Quantidade_de_Materia_Prima * Custo)
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
          Case 7
-            vgRetVal = (Quantidade_de_Materia_Prima * Peso)
+            vgRetVal = (Quantidade_de_Materia_Prima * peso)
             vgColumn = -1                   'flag para permitir definição desse novo valor para coluna do grid
       End Select
       If Err Then Err.Clear
    ElseIf vgOq = KEYPRESS_NO_GRID Then
       GoSub IniApDaCol
-      Comandos KeyCodeAscii, Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, Peso, Custo
+      Comandos KeyCodeAscii, Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, peso, Custo
    ElseIf vgOq = CONDICOES_ESPECIAIS Then
       If vgSituacao <> ACAO_INCLUINDO Then
          GoSub IniApDaTb
@@ -5356,7 +5306,7 @@ Private Function ExecutaGrid0(ColumnValue() As Variant, ByVal vgOq As Integer, O
          End If
          If vgIsValid And vgCol = -1 Then
             If Sequencia_da_Materia_Prima > 0 Then
-               vgIsValid = (ValidaProduto2(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, Peso, Custo))
+               vgIsValid = (ValidaProduto2(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, peso, Custo))
                If Not vgIsValid Then vgColumn = 1
                vgErrorMessage$ = "Materia Prima INATIVA!"
             End If
@@ -5381,10 +5331,10 @@ IniApDaCol:
    On Error Resume Next
    Sequencia_da_Materia_Prima = Val(Parse$(CStr(ColumnValue(1)), Chr$(1), 1))
    Quantidade_de_Materia_Prima = ColumnValue(2)
-   Peso = ColumnValue(4)
+   peso = ColumnValue(4)
    Custo = ColumnValue(5)
-   Peso = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, Peso, Custo, "Peso")
-   Custo = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, Peso, Custo, "Custo")
+   peso = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, peso, Custo, "Peso")
+   Custo = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, peso, Custo, "Custo")
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
@@ -5395,8 +5345,8 @@ IniApDaTb:
       Sequencia_da_Materia_Prima = Materia_Prima![Seqüência da Matéria Prima]
       Quantidade_de_Materia_Prima = Materia_Prima![Quantidade de Matéria Prima]
    End If
-   Peso = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, Peso, Custo, "Peso")
-   Custo = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, Peso, Custo, "Custo")
+   peso = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, peso, Custo, "Peso")
+   Custo = InfoProdutos(Sequencia_do_Produto, Sequencia_da_Materia_Prima, Quantidade_de_Materia_Prima, peso, Custo, "Custo")
    If Err Then Err.Clear
    On Error GoTo DeuErro
    Return
