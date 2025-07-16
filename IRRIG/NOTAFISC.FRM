@@ -1418,17 +1418,26 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   450
             Width           =   14385
-            _extentx        =   0
-            _extenty        =   0
-            editbackcolor   =   16777152
-            edittextcolor   =   -2147483640
-            celltextcolor   =   -2147483640
-            stripes         =   -1
-            stripesbackcolor=   14737632
-            rowheight       =   315
-            savegridbars    =   -1
-            caption         =   "Produtos"
-            font            =   "NOTAFISC.frx":008C
+            _ExtentX        =   0
+            _ExtentY        =   0
+            EditBackColor   =   16777152
+            EditTextColor   =   -2147483640
+            CellTextColor   =   -2147483640
+            Stripes         =   -1  'True
+            StripesBackColor=   14737632
+            RowHeight       =   315
+            SaveGridBars    =   -1  'True
+            SaveGridStripes =   0   'False
+            Caption         =   "Produtos"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Arial"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
          End
          Begin IRRIG.GListV Grid 
             Height          =   4785
@@ -1438,17 +1447,26 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   450
             Width           =   14385
-            _extentx        =   0
-            _extenty        =   0
-            editbackcolor   =   16777152
-            edittextcolor   =   -2147483640
-            celltextcolor   =   -2147483640
-            stripes         =   -1
-            stripesbackcolor=   14737632
-            rowheight       =   315
-            savegridbars    =   -1
-            caption         =   "Serviços"
-            font            =   "NOTAFISC.frx":00B0
+            _ExtentX        =   0
+            _ExtentY        =   0
+            EditBackColor   =   16777152
+            EditTextColor   =   -2147483640
+            CellTextColor   =   -2147483640
+            Stripes         =   -1  'True
+            StripesBackColor=   14737632
+            RowHeight       =   315
+            SaveGridBars    =   -1  'True
+            SaveGridStripes =   0   'False
+            Caption         =   "Serviços"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Arial"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
          End
          Begin VB.CommandButton bottxtCampo27 
             Height          =   270
@@ -1490,17 +1508,26 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   855
             Width           =   14385
-            _extentx        =   0
-            _extenty        =   0
-            editbackcolor   =   16777152
-            edittextcolor   =   -2147483640
-            celltextcolor   =   -2147483640
-            stripes         =   -1
-            stripesbackcolor=   14737632
-            rowheight       =   315
-            savegridbars    =   -1
-            caption         =   "Conjuntos"
-            font            =   "NOTAFISC.frx":00D4
+            _ExtentX        =   0
+            _ExtentY        =   0
+            EditBackColor   =   16777152
+            EditTextColor   =   -2147483640
+            CellTextColor   =   -2147483640
+            Stripes         =   -1  'True
+            StripesBackColor=   14737632
+            RowHeight       =   315
+            SaveGridBars    =   -1  'True
+            SaveGridStripes =   0   'False
+            Caption         =   "Conjuntos"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Arial"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
          End
          Begin IRRIG.GListV Grid 
             Height          =   4800
@@ -1510,17 +1537,26 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   480
             Width           =   14385
-            _extentx        =   0
-            _extenty        =   0
-            editbackcolor   =   16777152
-            edittextcolor   =   -2147483640
-            celltextcolor   =   -2147483640
-            stripes         =   -1
-            stripesbackcolor=   14737632
-            rowheight       =   315
-            savegridbars    =   -1
-            caption         =   "Peças"
-            font            =   "NOTAFISC.frx":00F8
+            _ExtentX        =   0
+            _ExtentY        =   0
+            EditBackColor   =   16777152
+            EditTextColor   =   -2147483640
+            CellTextColor   =   -2147483640
+            Stripes         =   -1  'True
+            StripesBackColor=   14737632
+            RowHeight       =   315
+            SaveGridBars    =   -1  'True
+            SaveGridStripes =   0   'False
+            Caption         =   "Peças"
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Arial"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
          End
          Begin VB.CommandButton bottxtCampo28 
             Height          =   270
@@ -1620,18 +1656,27 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   750
             Width           =   4515
-            _extentx        =   0
-            _extenty        =   0
-            editbackcolor   =   16777152
-            edittextcolor   =   -2147483640
-            celltextcolor   =   -2147483640
-            stripes         =   -1
-            stripesbackcolor=   14737632
-            rowheight       =   315
-            showgridcaption =   0
-            savegridbars    =   -1
-            caption         =   ""
-            font            =   "NOTAFISC.frx":011C
+            _ExtentX        =   0
+            _ExtentY        =   0
+            EditBackColor   =   16777152
+            EditTextColor   =   -2147483640
+            CellTextColor   =   -2147483640
+            Stripes         =   -1  'True
+            StripesBackColor=   14737632
+            RowHeight       =   315
+            ShowGridCaption =   0   'False
+            SaveGridBars    =   -1  'True
+            SaveGridStripes =   0   'False
+            Caption         =   ""
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "Arial"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
          End
          Begin VB.CheckBox ChkCp 
             Caption         =   "NFe Complementar"
@@ -5249,22 +5294,31 @@ Begin VB.Form frmNotaFisc
       TabIndex        =   257
       Top             =   330
       Width           =   1575
-      _extentx        =   2778
-      _extenty        =   1402
-      fullrowselect   =   0
-      stripesbackcolor=   14737632
-      rowheight       =   285
-      allowedit       =   -1
-      allowinsert     =   -1
-      allowdelete     =   -1
-      manualupdate    =   -1
-      manualdelete    =   -1
-      navigationaddmode=   1
-      showfilterbar   =   -1
-      showgridcaption =   0
-      caption         =   ""
-      font            =   "NOTAFISC.frx":0140
-      cachesize       =   100
+      _ExtentX        =   2778
+      _ExtentY        =   1402
+      FullRowSelect   =   0   'False
+      StripesBackColor=   14737632
+      RowHeight       =   285
+      AllowEdit       =   -1  'True
+      AllowInsert     =   -1  'True
+      AllowDelete     =   -1  'True
+      ManualUpdate    =   -1  'True
+      ManualDelete    =   -1  'True
+      NavigationAddMode=   1
+      ShowFilterBar   =   -1  'True
+      ShowGridCaption =   0   'False
+      SaveGridStripes =   0   'False
+      Caption         =   ""
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      CacheSize       =   100
    End
    Begin VB.Timer timUnLoad 
       Enabled         =   0   'False
@@ -5368,7 +5422,7 @@ Public txtIE As Object, txtEndereco As Object, txtRGIE As Object
 Public txtDtSaida As Object, Bruto As Object, GrdProdutos As Object
 Public grdServicos As Object, grdConjuntos As Object, grdPecas As Object
 Public txtForma_de_Pagamento As Object, lblParcelamento As Object, Grdparcelamento As Object
-Public NCM As Object, txtEmbarque As Object, txtPais As Object
+Public Ncm As Object, txtEmbarque As Object, txtPais As Object
 Public lblNota2 As Object, lblAjuste As Object, lblNota As Object
 Public lblNNota As Object, txtPropriedade As Object, txtOrigem1 As Object
 Public txtOrigem2 As Object, txtContrato As Object, Lbl_livro As Object
@@ -5617,7 +5671,7 @@ Private Function InfoProdutos(Valor_do_Tributo As Double, Sequencia_da_Nota_Fisc
       
    Select Case Oq
       Case "NCM"
-         InfoProdutos = ProdutoNCMAux!NCM
+         InfoProdutos = ProdutoNCMAux!Ncm
       Case "Sigla"
          InfoProdutos = ProdutoUnidadeAux![Sigla da Unidade]
       Case "Valor Unitário"
@@ -5663,7 +5717,7 @@ Private Function InfoConjuntos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Conju
    
    Select Case Oq
       Case "NCM"
-         InfoConjuntos = ConjuntoNCMAux!NCM
+         InfoConjuntos = ConjuntoNCMAux!Ncm
       Case "Sigla"
          InfoConjuntos = ConjuntoUnidadeAux![Sigla da Unidade]
       Case "Valor Unitário"
@@ -5693,7 +5747,7 @@ Private Function InfoPecas(Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Peca_N
    
    Select Case Oq
       Case "NCM"
-         InfoPecas = PecasNCMAux!NCM
+         InfoPecas = PecasNCMAux!Ncm
       Case "Sigla"
          InfoPecas = PecasUnidadeAux![Sigla da Unidade]
       Case "Valor Unitário"
@@ -7259,7 +7313,7 @@ End If
    Do While Not Itens.EOF
       If Vazio(Itens!Descrição) Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Descrição"
       If Vazio(Itens![Sigla da Unidade]) Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Unidade"
-      If Vazio(Itens!NCM) And FinNFe <> 3 Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Classificação Fiscal (NCM)"
+      If Vazio(Itens!Ncm) And FinNFe <> 3 Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Classificação Fiscal (NCM)"
       Itens.MoveNext
    Loop
       
@@ -7784,14 +7838,14 @@ Private Sub SuperAcao()
 End Sub
 
 Private Function PegaNCMPadrao() As Long
-   Dim NCM As New GRecordSet
+   Dim Ncm As New GRecordSet
    
    On Error Resume Next
    
-   Set NCM = vgDb.OpenRecordSet("SELECT [Seqüência da Classificação] FROM [Classificação Fiscal] WHERE NCM = 84248229")
+   Set Ncm = vgDb.OpenRecordSet("SELECT [Seqüência da Classificação] FROM [Classificação Fiscal] WHERE NCM = 84248229")
    
-   If NCM.RecordCount > 0 Then
-      PegaNCMPadrao = NCM![Seqüência da Classificação]
+   If Ncm.RecordCount > 0 Then
+      PegaNCMPadrao = Ncm![Seqüência da Classificação]
    End If
 
 End Function
@@ -8476,10 +8530,10 @@ Private Sub AtualizaValoresProdutos()
                    Nota_Fiscal![Seqüência da Propriedade], , , MunicipioAux!UF)
 
                 '---- nova regra: revenda .102 + NCM 84248 ? zera PIS/Cofins ----
-                If IsNull(![NCM]) Then
+                If IsNull(![Ncm]) Then
                     NCMProd = ""
                 Else
-                    NCMProd = ![NCM]
+                    NCMProd = ![Ncm]
                 End If
 
                 If Right(Trim(![CFOP]), 3) = "102" And Left(NCMProd, 5) = "84248" Then
@@ -8529,9 +8583,9 @@ End Sub
 'Retorna Ação Change' para 'CONJUNTO AVULSO
 Private Sub LimpaNcm()
    If Conjunto_Avulso = True Then
-      NCM.Value = 0
+      Ncm.Value = 0
    Else
-      NCM.Value = 27
+      Ncm.Value = 27
    End If
 End Sub
 
@@ -8873,6 +8927,10 @@ End Sub
         Dim gMonoTot   As String
         Dim IBSCBSTot  As String    ' união dos grupos IBS/CBS/Mono
         Dim vIS        As Double    ' total de Imposto Seletivo dos itens
+        Dim gCompraGovStr As String    ' grupo gCompraGov gerado quando necessário
+        Dim DFeReferenciado As String    ' grupo DFeReferenciado do item
+        Dim det_IS As String         ' grupo IS de tributos seletivos
+        Dim det_IBSCBS As String     ' grupo IBSCBS de tributos unificados
         'NF5X
         '--- defaults gerais para os campos NF-e 5.0 --------------------------
         credPresumido_Opc = ""       ' string vazia = não informado
@@ -8881,6 +8939,10 @@ End Sub
         obsFiscoItem_Opc = ""        ' sem observação do fisco
         vItem = 0                    ' deixa o método calcular, se ?0 força o valor
         DFeReferenciado_Opc = ""     ' sem DF-e referenciado
+        gCompraGovStr = ""
+        DFeReferenciado = ""
+        det_IS = ""
+        det_IBSCBS = ""
         '----------------------------------------------------------------------
         'NF5X
        
@@ -9390,7 +9452,7 @@ ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horar
              'LEMBRANDO: Se for colocar esse campo na NFe, alguns Código de Barras está incorreto arrumar antes
              Prod_cEAN = "SEM GTIN"   'Item![Código de Barras]         ' código EAN (0, 8,12, 13 ou 14 caracteres), o conteúdo pode ser omitido se não tiver EAN
              Prod_xProd = SuperTiraAcentos(Substitui(Trim(Item![Descrição Produto]), "&", "E", UM_A_UM)) ' código do produto, espaços em branco consecutivos ou no início ou fim do campo podem gerar erro de Schema XML, além de caracteres reservados do XML <>&"'
-             Prod_NCM = IIf(FinNFe = 3, "00", Item!NCM)
+             Prod_NCM = IIf(FinNFe = 3, "00", Item!Ncm)
              Prod_Cest = Item!Cest
              Prod_NVE_Opc = ""                           ' Campo Opcional
              Prod_ExTIPI = ""                            ' ExTipi, informar de acordo com o código EX da TIPI se houver para o NCM do produto.
@@ -9710,17 +9772,21 @@ ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horar
                                          
              'Gera Grupo do Imposto
              'Lei da Transparencia
-             'det_imposto = objNFeUtil.imposto310(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN)
-              det_imposto = objNFeUtil.impostoNT2015003(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest)
-            
+             
+             'NF5X
+              det_imposto = objNFeUtil.impostoRTC(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest, det_IS, det_IBSCBS)
+             'NF5X
+             
+             
              ' Campos Novos Layout 3.10
              Det_pDevol = 0    ' Campo Opcional uhuu
              Det_vIPIDevol = 0 ' Campo Opcional uhuu
              
-             'Gera Grupo de Detalhamento do Produto
              
-             Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", 0, "")
-
+             'NF5X
+             DFeReferenciado = IIf(DFeReferenciado_Opc <> "", objNFeUtil.DFeReferenciado(DFeReferenciado_Opc, det_nItem), "")
+             Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, obsContItem_Opc, obsFiscoItem_Opc, vItem, DFeReferenciado)
+            'NF5X
              
              Item.MoveNext
           Loop
@@ -9794,13 +9860,18 @@ ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horar
        det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
        'Gera Grupo do Imposto
        'Lei da Transparencia
-       det_imposto = objNFeUtil.impostoNT2015003(Round((Serv_vISSQN + pis_vPIS + cofins_vCOFINS), 2), "", "", "", det_PIS, "", det_COFINS, "", ISSQN310, "")
+       
+       'NF5X
+       det_imposto = objNFeUtil.impostoRTC(Round((Serv_vISSQN + pis_vPIS + cofins_vCOFINS), 2), "", "", "", det_PIS, "", det_COFINS, "", ISSQN310, "", det_IS, det_IBSCBS)
+       'NF5X
+       
        Det_pDevol = 0
        Det_vIPIDevol = 0
        'Gera Grupo de Detalhamento dos Serviços
        
        'NF5X
-       Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol, "", "", 0, "")
+       DFeReferenciado = IIf(DFeReferenciado_Opc <> "", objNFeUtil.DFeReferenciado(DFeReferenciado_Opc, det_nItem), "")
+       Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol, obsContItem_Opc, obsFiscoItem_Opc, vItem, DFeReferenciado)
        
        Servicos.MoveNext
        Loop
@@ -10054,15 +10125,21 @@ OcultaValor:
                                       
        'Gera Grupo do Imposto
        'Lei da Transparencia
-       'det_imposto = objNFeUtil.imposto310(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN)
-        det_imposto = objNFeUtil.impostoNT2015003(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest)
+       
+       
+       det_imposto = objNFeUtil.impostoRTC(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest, det_IS, det_IBSCBS)
+       
+       
+       
        ' Campos Novos Layout 3.10
        Det_pDevol = 0    ' Campo Opcional uhuu
        Det_vIPIDevol = 0 ' Campo Opcional uhuu
        'Gera Grupo de Detalhamento do Produto
        
        'NF5X
-      Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", 0, "")
+       DFeReferenciado = IIf(DFeReferenciado_Opc <> "", objNFeUtil.DFeReferenciado(DFeReferenciado_Opc, det_nItem), "")
+       Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, obsContItem_Opc, obsFiscoItem_Opc, vItem, DFeReferenciado)
+    
     
        Do While Not Item.EOF
           If LayoutAntigo Then
@@ -10265,8 +10342,11 @@ OcultaValor:
           'det_imposto = objNFeUtil.imposto2G(det_icms, det_IPI, det_II, det_PIS, det_COFINS, det_PISST, det_COFINSST, det_ISSQN)
           'Lei da Transparencia
           If LayoutAntigo Then
-          'det_imposto = objNFeUtil.imposto310(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN)
-           det_imposto = objNFeUtil.impostoNT2015003(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest)
+          
+        'NF5X
+        det_imposto = objNFeUtil.impostoRTC(det_vTotTrib, det_icms, det_IPI, det_II, det_PIS, det_PISST, det_COFINS, det_COFINSST, det_ISSQN, CalcICMSUFDest, det_IS, det_IBSCBS)
+       
+       
           End If
           
           'Campos Novos Layout 3.10
@@ -10275,9 +10355,11 @@ OcultaValor:
           'Gera Grupo de Detalhamento do Produto
           If LayoutAntigo Then
           
-          'NF5X
-          Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", 0, "")
-
+          
+           'NF5X
+             DFeReferenciado = IIf(DFeReferenciado_Opc <> "", objNFeUtil.DFeReferenciado(DFeReferenciado_Opc, det_nItem), "")
+             Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, obsContItem_Opc, obsFiscoItem_Opc, vItem, DFeReferenciado)
+          
           
           End If
           Item.MoveNext
@@ -10349,15 +10431,24 @@ OcultaValor:
        det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
        'Gera Grupo do Imposto
        'Lei da Transparencia
-       det_imposto = objNFeUtil.impostoNT2015003(Round((Serv_vISSQN + pis_vPIS + cofins_vCOFINS), 2), "", "", "", det_PIS, "", det_COFINS, "", ISSQN310, "")
-       Det_pDevol = 0
+       
+       
+       
+       det_imposto = objNFeUtil.impostoRTC(Round((Serv_vISSQN + pis_vPIS + cofins_vCOFINS), 2), "", "", "", det_PIS, "", det_COFINS, "", ISSQN310, "", det_IS, det_IBSCBS)
+      
+      
+      
+      
+      Det_pDevol = 0
        Det_vIPIDevol = 0
        'Gera Grupo de Detalhamento dos Serviços
        
-       'NF5X
-       Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol, "", "", 0, "")
-
-       
+      
+      'NF5X
+       DFeReferenciado = IIf(DFeReferenciado_Opc <> "", objNFeUtil.DFeReferenciado(DFeReferenciado_Opc, det_nItem), "")
+       Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol, obsContItem_Opc, obsFiscoItem_Opc, vItem, DFeReferenciado)
+      
+      
        
        Servicos.MoveNext
        Loop
@@ -12127,7 +12218,7 @@ Private Sub Form_Load()
    Set txtForma_de_Pagamento = txtCampo(28)
    Set lblParcelamento = Label(9)
    Set Grdparcelamento = Grid(4)
-   Set NCM = txtCampo(49)
+   Set Ncm = txtCampo(49)
    Set txtEmbarque = txtCampo(50)
    Set txtPais = txtCampo(51)
    Set lblNota2 = Label(73)
@@ -13556,7 +13647,7 @@ Private Sub Form_Unload(Cancel As Integer)
    Set txtForma_de_Pagamento = Nothing
    Set lblParcelamento = Nothing
    Set Grdparcelamento = Nothing
-   Set NCM = Nothing
+   Set Ncm = Nothing
    Set txtEmbarque = Nothing
    Set txtPais = Nothing
    Set lblNota2 = Nothing
