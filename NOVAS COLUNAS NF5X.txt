@@ -1,0 +1,46 @@
+USE IRRIGACAO
+GO
+
+-- 1) Adiciona colunas de impostos nos itens
+ALTER TABLE [dbo].[Produtos da Nota Fiscal]
+ADD
+    ValorIBS                 DECIMAL(13,2) NULL,  -- Valor do IBS por item
+    ValorCBS                 DECIMAL(13,2) NULL,  -- Valor da CBS por item
+    ValorImpostoSeletivo     DECIMAL(13,2) NULL;  -- Valor do Imposto Seletivo por item
+GO
+
+-- 2) Adiciona colunas de totais de impostos na nota fiscal
+ALTER TABLE [dbo].[Nota Fiscal]
+ADD
+    TotalIBS                 DECIMAL(13,2) NULL,  -- Soma do IBS de todos os itens
+    TotalCBS                 DECIMAL(13,2) NULL,  -- Soma da CBS de todos os itens
+    TotalImpostoSeletivo     DECIMAL(13,2) NULL;  -- Soma do Imposto Seletivo de todos os itens
+GO
+
+
+
+
+
+
+
+
+
+USE IRRIGACAO
+GO
+
+-- 1) Ajustes para NF-e 5.0 (Lucro Real)
+ALTER TABLE [dbo].[Nota Fiscal]
+ADD
+    [MunicipioGeradorIBS]             VARCHAR(7)    NOT NULL DEFAULT(''),    -- município do fato gerador do IBS
+    [TipoNotaDebito]                  SMALLINT      NOT NULL DEFAULT(0),      -- tipo de nota de débito
+    [TipoNotaCredito]                 SMALLINT      NOT NULL DEFAULT(0),      -- tipo de nota de crédito
+    [TipoEnteGovernamental]           SMALLINT      NOT NULL DEFAULT(0),      -- tipo de ente governamental (gCompraGov)
+    [PercentualRedutorCompraGov]      DECIMAL(5,2)  NOT NULL DEFAULT(0),      -- percentual redutor do gCompraGov
+    [TipoOperacaoCompraGov]           SMALLINT      NOT NULL DEFAULT(0),      -- tipo de operação governamental
+    [ChaveNFePagamentoAntecipado]     VARCHAR(44)   NOT NULL DEFAULT('');    -- chave da NF-e original em pagamento antecipado
+GO
+
+ALTER TABLE [dbo].[Produtos da Nota Fiscal]
+ADD
+    [IndicadorBemMovelUsado]          BIT           NOT NULL DEFAULT(0);      -- indicador de bem móvel usado
+GO
