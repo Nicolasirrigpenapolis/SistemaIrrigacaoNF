@@ -6957,7 +6957,7 @@ Private Sub GeraNota()
     Close #hFile
 
     If Not Novo_Layout Then
-        RetornoNFe310 NFXmlAssinada, 0, "", "", ""
+        RetornoNFe NFXmlAssinada, 0, "", "", ""
     Else
         RetornoNFe NFXmlAssinada, 0, "", "", ""
     End If
@@ -7018,75 +7018,6 @@ Private Sub AcaoPopAmbiente(Index As Integer)
    Reposition
 End Sub
 
-
-
-
-'------------------------------------------------------------
-'  RetornoNFe  –  adaptado ao ENVIOS SÍNCRONOS (EnviaNFSincrono)
-'------------------------------------------------------------
-' Parâmetros:
-'   • NFXmlAssinada  = <procNFe> ou <procNFeR> devolvido pela DLL
-'   • cStat          = status retornado (100, 150, 101, 2xx…)
-'   • nroProtocolo   = nº do protocolo
-'   • dhProtocolo    = data e hora do protocolo
-'   • msgResultado   = texto da SEFAZ
-'
-'   Recibo deixa de existir no modo síncrono, por isso foi removido.
-'------------------------------------------------------------
-Private Sub RetornoNFe( _
-        NFXmlAssinada As String, _
-        cStat As Long, _
-        nroProtocolo As String, _
-        dhProtocolo As String, _
-        msgResultado As String)
-
-    Dim Arq        As Long
-    Dim tpAmbiente As Long
-    Dim XML        As New GRecordSet
-
-    On Error GoTo DeuErro
-    Screen.MousePointer = vbHourglass
-    lblProgresso.Caption = "Processando retorno da NFe..."
-
-    If Parametros_da_NFe!ambiente = 0 Then
-        tpAmbiente = 1               ' Produção
-    Else
-        tpAmbiente = 2               ' Homologação
-    End If
-
-    '––––– STATUS JÁ É DEFINITIVO –––––
-    Select Case cStat
-        Case 100, 150           ' Autorizada
-            GravaAutorizada NFXmlAssinada, nroProtocolo, dhProtocolo, tpAmbiente, True
-            MsgBox "NFe Autorizada!", vbInformation, vaTitulo
-            vgSituacao = ACAO_NAVEGANDO
-            PrepBotoes Me, vgSituacao
-            ExecutaPreValidacao
-            DANFE
-
-        Case 101                ' Denegada
-            GravaAutorizada NFXmlAssinada, nroProtocolo, dhProtocolo, tpAmbiente, False
-            MsgBox "NFe Denegada!", vbExclamation, vaTitulo
-
-        Case Else               ' Rejeitada
-            MsgBox cStat & " – " & msgResultado, vbCritical, "NFe Rejeitada"
-            With vgTb
-                .Edit
-                !Transmitido = False
-                !Observação = AppendMsg(!Observação, "Rejeição SEFAZ: " & msgResultado)
-                .Update
-            End With
-    End Select
-
-SaiDaSub:
-    Screen.MousePointer = vbDefault
-    lblProgresso.Caption = IIf(tpAmbiente = 1, "", "AMBIENTE NFe EM MODO TESTE")
-    Exit Sub
-
-DeuErro:
-    MsgBox Err.Description, vbCritical, vaTitulo
-    Resume SaiDaSub
-End Sub
 
 '------------------------------------------------------------
 '  GravaAutorizada  –  salva XML + atualiza tabelas
@@ -8626,7 +8557,7 @@ End Function
 
 
 '------------------------------------------------------------
-'  RetornoNFe310  –  agora para envio SÍNCRONO (EnviaNFSincrono)
+'  RetornoNFe  –  agora para envio SÍNCRONO (EnviaNFSincrono)
 '
 '  • NFXmlAssinada  ?  <procNFe> completo devolvido pela DLL
 '  • cStat          ?  código de status (100, 150, 101, 2xx…)
@@ -8638,7 +8569,7 @@ End Function
 '============================================================
 '   SalvaXML – grava o XML AUTORIZADO ou DENEGADO em disco
 '============================================================
-Private Sub RetornoNFe310( _
+Private Sub RetornoNFe( _
         NFXmlAssinada As String, _
         cStat As Long, _
         nroProtocolo As String, _
@@ -8793,7 +8724,7 @@ End Sub
 
 
 'Layout 4.00 – Envio Síncrono de NF-e
-Private Sub TransmitirNFe310(NFe As String, chaveNFe As String)
+Private Sub TransmitirNFe(NFe As String, chaveNFe As String)
 
     '–––– parâmetros da chamada ao Web-Service ––––
     Dim msgDados       As String
@@ -8857,11 +8788,11 @@ Continua:
 
         '––– SUCESSO SÍNCRONO IMEDIATO –––
         Case 100, 150
-            RetornoNFe310 NFXmlAssinada, cStat, nroProtocolo, dhProtocolo, msgResultado
+            RetornoNFe NFXmlAssinada, cStat, nroProtocolo, dhProtocolo, msgResultado
             GoTo SaiDaSub
 
         Case 101
-            RetornoNFe310 NFXmlAssinada, cStat, nroProtocolo, dhProtocolo, msgResultado
+            RetornoNFe NFXmlAssinada, cStat, nroProtocolo, dhProtocolo, msgResultado
             GoTo SaiDaSub
 
         Case 108, 109
@@ -9820,8 +9751,8 @@ ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horar
              'NF5X
              'Preenchimento dos grupos IS e IBSCBS quando aplicavel
                'TODO: ajustar campos conforme origem dos dados
-               If Item![Valor_IS] > 0 Then
-                  det_IS = objNFeUtil.IS(Item!CSTIS, Item!cClassTribIS, Item![BaseIS], Item![AliqIS], 0, "", 0, Item![Valor_IS])
+                If Item!ValorImpostoSeletivo > 0 Then
+                  det_IS = objNFeUtil.IS(Item!CSTIS, Item!cClassTribIS, Item![BaseIS], Item![AliqIS], 0, "", 0, Item!ValorImpostoSeletivo)
                Else
                   det_IS = ""
                End If
@@ -9918,8 +9849,8 @@ ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horar
        'NF5X
        'Gera Grupo do COFINS
        det_COFINS = objNFeUtil.cofins(cofins_CST, cofins_vBC, cofins_pCOFINS, cofins_vCOFINS, cofins_qBCProd, cofins_vAliqProd)
-        If Servicos![Valor_IS] > 0 Then
-           det_IS = objNFeUtil.IS(Servicos!CSTIS, Servicos!cClassTribIS, Servicos![BaseIS], Servicos![AliqIS], 0, "", 0, Servicos![Valor_IS])
+        If Servicos!ValorImpostoSeletivo > 0 Then
+           det_IS = objNFeUtil.IS(Servicos!CSTIS, Servicos!cClassTribIS, Servicos![BaseIS], Servicos![AliqIS], 0, "", 0, Servicos!ValorImpostoSeletivo)
         Else
            det_IS = ""
         End If
@@ -10196,10 +10127,9 @@ OcultaValor:
        
        
        'NF5X
-       'Preenchimento dos grupos IS e IBSCBS quando aplicavel
-        'TODO: ajustar campos conforme origem dos dados
-        If Servicos![Valor_IS] > 0 Then
-           det_IS = objNFeUtil.IS(Servicos!CSTIS, Servicos!cClassTribIS, Servicos![BaseIS], Servicos![AliqIS], 0, "", 0, Servicos![Valor_IS])
+        'Preenchimento dos grupos IS e IBSCBS usando campos do servico'
+        If Servicos!ValorImpostoSeletivo > 0 Then
+           det_IS = objNFeUtil.IS(Servicos!CSTIS, Servicos!cClassTribIS, Servicos![BaseIS], Servicos![AliqIS], 0, "", 0, Servicos!ValorImpostoSeletivo)
         Else
            det_IS = ""
         End If
@@ -10210,10 +10140,9 @@ OcultaValor:
         End If
        
        
-       'Preenchimento dos grupos IS e IBSCBS quando aplicavel
-        'TODO: ajustar campos conforme origem dos dados
-        If Item![Valor_IS] > 0 Then
-           det_IS = objNFeUtil.IS(Item!CSTIS, Item!cClassTribIS, Item![BaseIS], Item![AliqIS], 0, "", 0, Item![Valor_IS])
+  'Preenchimento dos grupos IS e IBSCBS usando campos do item'
+        If Item!ValorImpostoSeletivo > 0 Then
+           det_IS = objNFeUtil.IS(Item!CSTIS, Item!cClassTribIS, Item![BaseIS], Item![AliqIS], 0, "", 0, Item!ValorImpostoSeletivo)
         Else
            det_IS = ""
         End If
@@ -10438,10 +10367,9 @@ OcultaValor:
           End If
           
           'NF5X
-          'Preenchimento dos grupos IS e IBSCBS quando aplicavel
-            'TODO: ajustar campos conforme origem dos dados
-            If Item![Valor_IS] > 0 Then
-               det_IS = objNFeUtil.IS(Item!CSTIS, Item!cClassTribIS, Item![BaseIS], Item![AliqIS], 0, "", 0, Item![Valor_IS])
+               'Preenchimento dos grupos IS e IBSCBS usando campos do item'
+            If Item!ValorImpostoSeletivo > 0 Then
+               det_IS = objNFeUtil.IS(Item!CSTIS, Item!cClassTribIS, Item![BaseIS], Item![AliqIS], 0, "", 0, Item!ValorImpostoSeletivo)
             Else
                det_IS = ""
             End If
@@ -10917,7 +10845,7 @@ End If
           .BookMark = .LastModified
        End With
        
-       TransmitirNFe310 NFe, chaveNFe 'Transmitindo... Inicio dos Testes 05/12/2014 Prazo Final para Implantação 01/04/2015
+       TransmitirNFe NFe, chaveNFe 'Transmitindo... Inicio dos Testes 05/12/2014 Prazo Final para Implantação 01/04/2015
            
 DeuErro:
        If Err <> 0 Then
