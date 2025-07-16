@@ -1,3 +1,11 @@
 [History]
-1=#P0#=mb	#P1#=ExecutaGrid0	#P2#=IRRIG/frmNotaFisc/ExecutaGrid0	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250715154502	#P7#=0	#P8#=260	.
-2=#P0#=mb	#P1#=Form_Load	#P2#=IRRIG/frmNotaFisc/Form_Load	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20250715154414	#P7#=0	#P8#=262	.
+1=#P0#=mb	#P1#=GravaAutorizada	#P2#=IRRIG/frmNotaFisc/GravaAutorizada	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250716102724	#P7#=0	#P8#=15	.
+2=#P0#=mb	#P1#=AnalisaCondicoes	#P2#=IRRIG/frmNotaFisc/AnalisaCondicoes	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250716094202	#P7#=0	#P8#=-3	.
+3=#P0#=mb	#P1#=InicializaApelidos	#P2#=IRRIG/frmNotaFisc/InicializaApelidos	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250716091608	#P7#=0	#P8#=9	.
+4=#P0#=mb	#P1#=GravaHistorico	#P2#=IRRIG/frmNotaFisc/GravaHistorico	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250715173148	#P7#=0	#P8#=17	.
+5=#P0#=mb	#P1#=MontaChaveAcessoNF	#P2#=IRRIG/frmNotaFisc/MontaChaveAcessoNF	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250715172720	#P7#=0	#P8#=0	.
+6=#P0#=mb	#P1#=PreValidaNFSe	#P2#=IRRIG/frmNotaFisc/PreValidaNFSe	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250715171933	#P7#=0	#P8#=-1	.
+7=#P0#=mb	#P1#=PreValidaNFE	#P2#=IRRIG/frmNotaFisc/PreValidaNFE	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250715171544	#P7#=0	#P8#=143	.
+8=#P0#=mb	#P1#=GerarXmlNFe	#P2#=IRRIG/frmNotaFisc/GerarXmlNFe	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250716103540	#P7#=0	#P8#=1572	.
+9=#P0#=mb	#P1#=LigaDesligaBotoes	#P2#=IRRIG/frmNotaFisc/LigaDesligaBotoes	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250715164942	#P7#=0	#P8#=0	.
+10=#P0#=mb	#P1#=BlasterNFe400	#P2#=IRRIG/frmNotaFisc/BlasterNFe400	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20250715170957	#P7#=0	#P8#=0	.

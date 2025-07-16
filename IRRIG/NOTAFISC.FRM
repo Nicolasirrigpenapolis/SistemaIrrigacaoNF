@@ -25,147 +25,12 @@ Begin VB.Form frmNotaFisc
       BevelOuter      =   0
       Stretch         =   -1  'True
       Begin IRRIG.GBotao Botao 
-         Height          =   435
-         Index           =   0
-         Left            =   11430
-         TabIndex        =   85
-         TabStop         =   0   'False
-         Top             =   525
-         Width           =   1395
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Microsoft Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Caption         =   "DANFE"
-         CaptionAlign    =   4
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   435
-         Index           =   1
-         Left            =   10020
-         TabIndex        =   90
-         Top             =   75
-         Width           =   1395
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Microsoft Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Caption         =   "Imprimir"
-         CaptionAlign    =   4
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   435
-         Index           =   2
-         Left            =   11430
-         TabIndex        =   75
-         TabStop         =   0   'False
-         Top             =   75
-         Width           =   1395
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Microsoft Sans Serif"
-            Size            =   9.75
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Caption         =   "Cancelar"
-         CaptionAlign    =   4
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
          Height          =   300
-         Index           =   9
-         Left            =   9825
-         TabIndex        =   76
+         Index           =   14
+         Left            =   9705
+         TabIndex        =   94
          TabStop         =   0   'False
-         Top             =   1560
-         Width           =   240
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   30
-         Index           =   10
-         Left            =   15180
-         TabIndex        =   82
-         Top             =   60
-         Width           =   30
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   30
-         Index           =   11
-         Left            =   75
-         TabIndex        =   83
-         Top             =   8445
-         Width           =   30
-         _ExtentX        =   0
-         _ExtentY        =   0
-         ForeColor       =   0
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         CaptionOffset   =   50
-      End
-      Begin IRRIG.GBotao Botao 
-         Height          =   300
-         Index           =   12
-         Left            =   14475
-         TabIndex        =   84
-         TabStop         =   0   'False
-         Top             =   1560
+         Top             =   375
          Width           =   240
          _ExtentX        =   0
          _ExtentY        =   0
@@ -205,11 +70,11 @@ Begin VB.Form frmNotaFisc
       End
       Begin IRRIG.GBotao Botao 
          Height          =   300
-         Index           =   14
-         Left            =   9705
-         TabIndex        =   94
+         Index           =   12
+         Left            =   14475
+         TabIndex        =   84
          TabStop         =   0   'False
-         Top             =   375
+         Top             =   1560
          Width           =   240
          _ExtentX        =   0
          _ExtentY        =   0
@@ -223,6 +88,141 @@ Begin VB.Form frmNotaFisc
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   30
+         Index           =   11
+         Left            =   75
+         TabIndex        =   83
+         Top             =   8445
+         Width           =   30
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   30
+         Index           =   10
+         Left            =   15180
+         TabIndex        =   82
+         Top             =   60
+         Width           =   30
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   300
+         Index           =   9
+         Left            =   9825
+         TabIndex        =   76
+         TabStop         =   0   'False
+         Top             =   1560
+         Width           =   240
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   435
+         Index           =   2
+         Left            =   11430
+         TabIndex        =   75
+         TabStop         =   0   'False
+         Top             =   75
+         Width           =   1395
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Microsoft Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Caption         =   "Cancelar"
+         CaptionAlign    =   4
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   435
+         Index           =   1
+         Left            =   10020
+         TabIndex        =   90
+         Top             =   75
+         Width           =   1395
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Microsoft Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Caption         =   "Imprimir"
+         CaptionAlign    =   4
+         CaptionOffset   =   50
+      End
+      Begin IRRIG.GBotao Botao 
+         Height          =   435
+         Index           =   0
+         Left            =   11430
+         TabIndex        =   85
+         TabStop         =   0   'False
+         Top             =   525
+         Width           =   1395
+         _ExtentX        =   0
+         _ExtentY        =   0
+         ForeColor       =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Microsoft Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Caption         =   "DANFE"
+         CaptionAlign    =   4
          CaptionOffset   =   50
       End
       Begin TabDlg.SSTab Tabs 
@@ -423,191 +423,191 @@ Begin VB.Form frmNotaFisc
          Tab(0).Control(84).Enabled=   0   'False
          Tab(0).Control(85)=   "txtCp(2)"
          Tab(0).Control(85).Enabled=   0   'False
-         Tab(0).Control(86)=   "Botao(8)"
+         Tab(0).Control(86)=   "Botao(3)"
          Tab(0).Control(86).Enabled=   0   'False
-         Tab(0).Control(87)=   "Botao(5)"
+         Tab(0).Control(87)=   "Botao(4)"
          Tab(0).Control(87).Enabled=   0   'False
-         Tab(0).Control(88)=   "Botao(4)"
+         Tab(0).Control(88)=   "Botao(5)"
          Tab(0).Control(88).Enabled=   0   'False
-         Tab(0).Control(89)=   "Botao(3)"
+         Tab(0).Control(89)=   "Botao(8)"
          Tab(0).Control(89).Enabled=   0   'False
          Tab(0).ControlCount=   90
          TabCaption(1)   =   "&2 - Produtos"
          TabPicture(1)   =   "NOTAFISC.frx":001C
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "Grid(0)"
-         Tab(1).Control(1)=   "Label(10)"
+         Tab(1).Control(0)=   "Label(10)"
+         Tab(1).Control(1)=   "Grid(0)"
          Tab(1).ControlCount=   2
          TabCaption(2)   =   "&3 - Serviços"
          TabPicture(2)   =   "NOTAFISC.frx":0038
          Tab(2).ControlEnabled=   0   'False
-         Tab(2).Control(0)=   "Grid(1)"
-         Tab(2).Control(1)=   "Label(13)"
+         Tab(2).Control(0)=   "Label(13)"
+         Tab(2).Control(1)=   "Grid(1)"
          Tab(2).ControlCount=   2
          TabCaption(3)   =   "&4 - Conjuntos"
          Tab(3).ControlEnabled=   0   'False
-         Tab(3).Control(0)=   "Grid(2)"
-         Tab(3).Control(1)=   "Label(11)"
-         Tab(3).Control(2)=   "Label(53)"
-         Tab(3).Control(3)=   "labFdo49"
-         Tab(3).Control(4)=   "bottxtCampo49(1)"
+         Tab(3).Control(0)=   "txtCp(58)"
+         Tab(3).Control(1)=   "ChkCp(4)"
+         Tab(3).Control(1).Enabled=   0   'False
+         Tab(3).Control(2)=   "Botao(7)"
+         Tab(3).Control(3)=   "txtCp(49)"
+         Tab(3).Control(4)=   "bottxtCampo49(2)"
          Tab(3).Control(4).Enabled=   0   'False
-         Tab(3).Control(5)=   "bottxtCampo49(2)"
+         Tab(3).Control(5)=   "bottxtCampo49(1)"
          Tab(3).Control(5).Enabled=   0   'False
-         Tab(3).Control(6)=   "txtCp(49)"
-         Tab(3).Control(7)=   "Botao(7)"
-         Tab(3).Control(8)=   "ChkCp(4)"
-         Tab(3).Control(8).Enabled=   0   'False
-         Tab(3).Control(9)=   "txtCp(58)"
+         Tab(3).Control(6)=   "labFdo49"
+         Tab(3).Control(7)=   "Label(53)"
+         Tab(3).Control(8)=   "Label(11)"
+         Tab(3).Control(9)=   "Grid(2)"
          Tab(3).ControlCount=   10
          TabCaption(4)   =   "&5 - Peças"
          Tab(4).ControlEnabled=   0   'False
-         Tab(4).Control(0)=   "Grid(3)"
-         Tab(4).Control(1)=   "Label(12)"
+         Tab(4).Control(0)=   "Label(12)"
+         Tab(4).Control(1)=   "Grid(3)"
          Tab(4).ControlCount=   2
          TabCaption(5)   =   "&6 - Financeiro"
          TabPicture(5)   =   "NOTAFISC.frx":0054
          Tab(5).ControlEnabled=   0   'False
-         Tab(5).Control(0)=   "Botao(6)"
-         Tab(5).Control(1)=   "bottxtCampo0(0)"
-         Tab(5).Control(1).Enabled=   0   'False
-         Tab(5).Control(2)=   "txtCp(0)"
-         Tab(5).Control(3)=   "bottxtCampo1(0)"
-         Tab(5).Control(3).Enabled=   0   'False
-         Tab(5).Control(4)=   "txtCp(1)"
-         Tab(5).Control(5)=   "bottxtCampo18(0)"
-         Tab(5).Control(5).Enabled=   0   'False
-         Tab(5).Control(6)=   "txtCp(18)"
-         Tab(5).Control(7)=   "bottxtCampo27(0)"
-         Tab(5).Control(7).Enabled=   0   'False
-         Tab(5).Control(8)=   "txtCp(27)"
-         Tab(5).Control(9)=   "bottxtCampo28(2)"
-         Tab(5).Control(9).Enabled=   0   'False
-         Tab(5).Control(10)=   "txtCp(28)"
-         Tab(5).Control(11)=   "bottxtCampo29(1)"
-         Tab(5).Control(11).Enabled=   0   'False
-         Tab(5).Control(12)=   "bottxtCampo29(2)"
-         Tab(5).Control(12).Enabled=   0   'False
-         Tab(5).Control(13)=   "txtCp(29)"
-         Tab(5).Control(14)=   "ChkCp(0)"
-         Tab(5).Control(14).Enabled=   0   'False
-         Tab(5).Control(15)=   "Grid(4)"
-         Tab(5).Control(16)=   "txtCp(36)"
-         Tab(5).Control(16).Enabled=   0   'False
-         Tab(5).Control(17)=   "txtCp(37)"
-         Tab(5).Control(17).Enabled=   0   'False
-         Tab(5).Control(18)=   "txtCp(38)"
-         Tab(5).Control(18).Enabled=   0   'False
-         Tab(5).Control(19)=   "txtCp(39)"
-         Tab(5).Control(19).Enabled=   0   'False
-         Tab(5).Control(20)=   "txtCp(40)"
-         Tab(5).Control(20).Enabled=   0   'False
-         Tab(5).Control(21)=   "txtCp(41)"
-         Tab(5).Control(21).Enabled=   0   'False
-         Tab(5).Control(22)=   "txtCp(42)"
-         Tab(5).Control(22).Enabled=   0   'False
-         Tab(5).Control(23)=   "txtCp(43)"
-         Tab(5).Control(23).Enabled=   0   'False
-         Tab(5).Control(24)=   "txtCp(44)"
-         Tab(5).Control(24).Enabled=   0   'False
-         Tab(5).Control(25)=   "txtCp(45)"
-         Tab(5).Control(25).Enabled=   0   'False
-         Tab(5).Control(26)=   "txtCp(46)"
-         Tab(5).Control(26).Enabled=   0   'False
-         Tab(5).Control(27)=   "txtCp(47)"
-         Tab(5).Control(27).Enabled=   0   'False
-         Tab(5).Control(28)=   "txtCp(48)"
-         Tab(5).Control(28).Enabled=   0   'False
-         Tab(5).Control(29)=   "Painel(2)"
-         Tab(5).Control(30)=   "txtCp(52)"
-         Tab(5).Control(30).Enabled=   0   'False
-         Tab(5).Control(31)=   "txtCp(53)"
-         Tab(5).Control(31).Enabled=   0   'False
-         Tab(5).Control(32)=   "txtCp(57)"
-         Tab(5).Control(32).Enabled=   0   'False
-         Tab(5).Control(33)=   "labFdo0"
-         Tab(5).Control(34)=   "Label(0)"
+         Tab(5).Control(0)=   "Label(66)"
+         Tab(5).Control(1)=   "Label(64)"
+         Tab(5).Control(2)=   "Label(63)"
+         Tab(5).Control(3)=   "Formato(2)"
+         Tab(5).Control(4)=   "Label(62)"
+         Tab(5).Control(5)=   "Formato(1)"
+         Tab(5).Control(6)=   "Label(61)"
+         Tab(5).Control(7)=   "Formato(0)"
+         Tab(5).Control(8)=   "Label(60)"
+         Tab(5).Control(9)=   "Label(57)"
+         Tab(5).Control(10)=   "Label(56)"
+         Tab(5).Control(11)=   "Label(30)"
+         Tab(5).Control(12)=   "Label(29)"
+         Tab(5).Control(13)=   "Label(28)"
+         Tab(5).Control(14)=   "Label(27)"
+         Tab(5).Control(15)=   "Label(26)"
+         Tab(5).Control(16)=   "Label(25)"
+         Tab(5).Control(17)=   "Label(24)"
+         Tab(5).Control(18)=   "Label(23)"
+         Tab(5).Control(19)=   "Label(22)"
+         Tab(5).Control(20)=   "Label(21)"
+         Tab(5).Control(21)=   "Label(20)"
+         Tab(5).Control(22)=   "Label(19)"
+         Tab(5).Control(23)=   "Label(18)"
+         Tab(5).Control(24)=   "Label(17)"
+         Tab(5).Control(25)=   "Label(16)"
+         Tab(5).Control(26)=   "Linha(2)"
+         Tab(5).Control(27)=   "Label(15)"
+         Tab(5).Control(28)=   "Label(14)"
+         Tab(5).Control(29)=   "Label(9)"
+         Tab(5).Control(30)=   "labFdo29"
+         Tab(5).Control(31)=   "labFdo28"
+         Tab(5).Control(32)=   "labFdo27"
+         Tab(5).Control(33)=   "labFdo18"
+         Tab(5).Control(34)=   "Label(4)"
          Tab(5).Control(35)=   "labFdo1"
-         Tab(5).Control(36)=   "Label(4)"
-         Tab(5).Control(37)=   "labFdo18"
-         Tab(5).Control(38)=   "labFdo27"
-         Tab(5).Control(39)=   "labFdo28"
-         Tab(5).Control(40)=   "labFdo29"
-         Tab(5).Control(41)=   "Label(9)"
-         Tab(5).Control(42)=   "Label(14)"
-         Tab(5).Control(43)=   "Label(15)"
-         Tab(5).Control(44)=   "Linha(2)"
-         Tab(5).Control(45)=   "Label(16)"
-         Tab(5).Control(46)=   "Label(17)"
-         Tab(5).Control(47)=   "Label(18)"
-         Tab(5).Control(48)=   "Label(19)"
-         Tab(5).Control(49)=   "Label(20)"
-         Tab(5).Control(50)=   "Label(21)"
-         Tab(5).Control(51)=   "Label(22)"
-         Tab(5).Control(52)=   "Label(23)"
-         Tab(5).Control(53)=   "Label(24)"
-         Tab(5).Control(54)=   "Label(25)"
-         Tab(5).Control(55)=   "Label(26)"
-         Tab(5).Control(56)=   "Label(27)"
-         Tab(5).Control(57)=   "Label(28)"
-         Tab(5).Control(58)=   "Label(29)"
-         Tab(5).Control(59)=   "Label(30)"
-         Tab(5).Control(60)=   "Label(56)"
-         Tab(5).Control(61)=   "Label(57)"
-         Tab(5).Control(62)=   "Label(60)"
-         Tab(5).Control(63)=   "Formato(0)"
-         Tab(5).Control(64)=   "Label(61)"
-         Tab(5).Control(65)=   "Formato(1)"
-         Tab(5).Control(66)=   "Label(62)"
-         Tab(5).Control(67)=   "Formato(2)"
-         Tab(5).Control(68)=   "Label(63)"
-         Tab(5).Control(69)=   "Label(64)"
-         Tab(5).Control(70)=   "Label(66)"
+         Tab(5).Control(36)=   "Label(0)"
+         Tab(5).Control(37)=   "labFdo0"
+         Tab(5).Control(38)=   "txtCp(57)"
+         Tab(5).Control(38).Enabled=   0   'False
+         Tab(5).Control(39)=   "txtCp(53)"
+         Tab(5).Control(39).Enabled=   0   'False
+         Tab(5).Control(40)=   "txtCp(52)"
+         Tab(5).Control(40).Enabled=   0   'False
+         Tab(5).Control(41)=   "Painel(2)"
+         Tab(5).Control(42)=   "txtCp(48)"
+         Tab(5).Control(42).Enabled=   0   'False
+         Tab(5).Control(43)=   "txtCp(47)"
+         Tab(5).Control(43).Enabled=   0   'False
+         Tab(5).Control(44)=   "txtCp(46)"
+         Tab(5).Control(44).Enabled=   0   'False
+         Tab(5).Control(45)=   "txtCp(45)"
+         Tab(5).Control(45).Enabled=   0   'False
+         Tab(5).Control(46)=   "txtCp(44)"
+         Tab(5).Control(46).Enabled=   0   'False
+         Tab(5).Control(47)=   "txtCp(43)"
+         Tab(5).Control(47).Enabled=   0   'False
+         Tab(5).Control(48)=   "txtCp(42)"
+         Tab(5).Control(48).Enabled=   0   'False
+         Tab(5).Control(49)=   "txtCp(41)"
+         Tab(5).Control(49).Enabled=   0   'False
+         Tab(5).Control(50)=   "txtCp(40)"
+         Tab(5).Control(50).Enabled=   0   'False
+         Tab(5).Control(51)=   "txtCp(39)"
+         Tab(5).Control(51).Enabled=   0   'False
+         Tab(5).Control(52)=   "txtCp(38)"
+         Tab(5).Control(52).Enabled=   0   'False
+         Tab(5).Control(53)=   "txtCp(37)"
+         Tab(5).Control(53).Enabled=   0   'False
+         Tab(5).Control(54)=   "txtCp(36)"
+         Tab(5).Control(54).Enabled=   0   'False
+         Tab(5).Control(55)=   "Grid(4)"
+         Tab(5).Control(56)=   "ChkCp(0)"
+         Tab(5).Control(56).Enabled=   0   'False
+         Tab(5).Control(57)=   "txtCp(29)"
+         Tab(5).Control(58)=   "bottxtCampo29(2)"
+         Tab(5).Control(58).Enabled=   0   'False
+         Tab(5).Control(59)=   "bottxtCampo29(1)"
+         Tab(5).Control(59).Enabled=   0   'False
+         Tab(5).Control(60)=   "txtCp(28)"
+         Tab(5).Control(61)=   "bottxtCampo28(2)"
+         Tab(5).Control(61).Enabled=   0   'False
+         Tab(5).Control(62)=   "txtCp(27)"
+         Tab(5).Control(63)=   "bottxtCampo27(0)"
+         Tab(5).Control(63).Enabled=   0   'False
+         Tab(5).Control(64)=   "txtCp(18)"
+         Tab(5).Control(65)=   "bottxtCampo18(0)"
+         Tab(5).Control(65).Enabled=   0   'False
+         Tab(5).Control(66)=   "txtCp(1)"
+         Tab(5).Control(67)=   "bottxtCampo1(0)"
+         Tab(5).Control(67).Enabled=   0   'False
+         Tab(5).Control(68)=   "txtCp(0)"
+         Tab(5).Control(69)=   "bottxtCampo0(0)"
+         Tab(5).Control(69).Enabled=   0   'False
+         Tab(5).Control(70)=   "Botao(6)"
          Tab(5).ControlCount=   71
          TabCaption(6)   =   "&7 - Dados NFe/NFSe"
          TabPicture(6)   =   "NOTAFISC.frx":0070
          Tab(6).ControlEnabled=   0   'False
-         Tab(6).Control(0)=   "ChkCp(1)"
-         Tab(6).Control(1)=   "bottxtCampo30(1)"
-         Tab(6).Control(1).Enabled=   0   'False
-         Tab(6).Control(2)=   "bottxtCampo30(2)"
-         Tab(6).Control(2).Enabled=   0   'False
-         Tab(6).Control(3)=   "txtCp(30)"
-         Tab(6).Control(4)=   "txtCp(31)"
-         Tab(6).Control(4).Enabled=   0   'False
-         Tab(6).Control(5)=   "txtCp(32)"
-         Tab(6).Control(5).Enabled=   0   'False
-         Tab(6).Control(6)=   "txtCp(33)"
-         Tab(6).Control(6).Enabled=   0   'False
-         Tab(6).Control(7)=   "txtCp(34)"
-         Tab(6).Control(7).Enabled=   0   'False
-         Tab(6).Control(8)=   "txtCp(35)"
-         Tab(6).Control(8).Enabled=   0   'False
-         Tab(6).Control(9)=   "txtCp(55)"
-         Tab(6).Control(9).Enabled=   0   'False
-         Tab(6).Control(10)=   "ChkCp(6)"
-         Tab(6).Control(11)=   "txtCp(60)"
+         Tab(6).Control(0)=   "Label(71)"
+         Tab(6).Control(1)=   "Label(70)"
+         Tab(6).Control(2)=   "Label(68)"
+         Tab(6).Control(3)=   "Label(59)"
+         Tab(6).Control(4)=   "Label(51)"
+         Tab(6).Control(5)=   "Label(50)"
+         Tab(6).Control(6)=   "Label(49)"
+         Tab(6).Control(7)=   "Label(48)"
+         Tab(6).Control(8)=   "Label(47)"
+         Tab(6).Control(9)=   "Label(46)"
+         Tab(6).Control(10)=   "labFdo30"
+         Tab(6).Control(11)=   "txtCp(63)"
          Tab(6).Control(12)=   "txtCp(62)"
-         Tab(6).Control(13)=   "txtCp(63)"
-         Tab(6).Control(14)=   "labFdo30"
-         Tab(6).Control(15)=   "Label(46)"
-         Tab(6).Control(16)=   "Label(47)"
-         Tab(6).Control(17)=   "Label(48)"
-         Tab(6).Control(18)=   "Label(49)"
-         Tab(6).Control(19)=   "Label(50)"
-         Tab(6).Control(20)=   "Label(51)"
-         Tab(6).Control(21)=   "Label(59)"
-         Tab(6).Control(22)=   "Label(68)"
-         Tab(6).Control(23)=   "Label(70)"
-         Tab(6).Control(24)=   "Label(71)"
+         Tab(6).Control(13)=   "txtCp(60)"
+         Tab(6).Control(14)=   "ChkCp(6)"
+         Tab(6).Control(15)=   "txtCp(55)"
+         Tab(6).Control(15).Enabled=   0   'False
+         Tab(6).Control(16)=   "txtCp(35)"
+         Tab(6).Control(16).Enabled=   0   'False
+         Tab(6).Control(17)=   "txtCp(34)"
+         Tab(6).Control(17).Enabled=   0   'False
+         Tab(6).Control(18)=   "txtCp(33)"
+         Tab(6).Control(18).Enabled=   0   'False
+         Tab(6).Control(19)=   "txtCp(32)"
+         Tab(6).Control(19).Enabled=   0   'False
+         Tab(6).Control(20)=   "txtCp(31)"
+         Tab(6).Control(20).Enabled=   0   'False
+         Tab(6).Control(21)=   "txtCp(30)"
+         Tab(6).Control(22)=   "bottxtCampo30(2)"
+         Tab(6).Control(22).Enabled=   0   'False
+         Tab(6).Control(23)=   "bottxtCampo30(1)"
+         Tab(6).Control(23).Enabled=   0   'False
+         Tab(6).Control(24)=   "ChkCp(1)"
          Tab(6).ControlCount=   25
          Begin IRRIG.GBotao Botao 
             Height          =   300
-            Index           =   3
-            Left            =   11175
-            TabIndex        =   22
+            Index           =   8
+            Left            =   5505
+            TabIndex        =   86
             TabStop         =   0   'False
-            Top             =   1905
+            Top             =   2835
             Width           =   240
             _ExtentX        =   0
             _ExtentY        =   0
@@ -625,31 +625,9 @@ Begin VB.Form frmNotaFisc
          End
          Begin IRRIG.GBotao Botao 
             Height          =   300
-            Index           =   4
-            Left            =   5205
-            TabIndex        =   14
-            TabStop         =   0   'False
-            Top             =   1440
-            Width           =   240
-            _ExtentX        =   0
-            _ExtentY        =   0
-            ForeColor       =   0
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "MS Sans Serif"
-               Size            =   8.25
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            CaptionOffset   =   50
-         End
-         Begin IRRIG.GBotao Botao 
-            Height          =   300
-            Index           =   5
-            Left            =   5100
-            TabIndex        =   5
+            Index           =   7
+            Left            =   -71670
+            TabIndex        =   39
             TabStop         =   0   'False
             Top             =   450
             Width           =   240
@@ -691,9 +669,9 @@ Begin VB.Form frmNotaFisc
          End
          Begin IRRIG.GBotao Botao 
             Height          =   300
-            Index           =   7
-            Left            =   -71670
-            TabIndex        =   39
+            Index           =   5
+            Left            =   5100
+            TabIndex        =   5
             TabStop         =   0   'False
             Top             =   450
             Width           =   240
@@ -713,11 +691,33 @@ Begin VB.Form frmNotaFisc
          End
          Begin IRRIG.GBotao Botao 
             Height          =   300
-            Index           =   8
-            Left            =   5505
-            TabIndex        =   86
+            Index           =   4
+            Left            =   5205
+            TabIndex        =   14
             TabStop         =   0   'False
-            Top             =   2835
+            Top             =   1440
+            Width           =   240
+            _ExtentX        =   0
+            _ExtentY        =   0
+            ForeColor       =   0
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            CaptionOffset   =   50
+         End
+         Begin IRRIG.GBotao Botao 
+            Height          =   300
+            Index           =   3
+            Left            =   11175
+            TabIndex        =   22
+            TabStop         =   0   'False
+            Top             =   1905
             Width           =   240
             _ExtentX        =   0
             _ExtentY        =   0
@@ -1418,26 +1418,17 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   450
             Width           =   14385
-            _ExtentX        =   0
-            _ExtentY        =   0
-            EditBackColor   =   16777152
-            EditTextColor   =   -2147483640
-            CellTextColor   =   -2147483640
-            Stripes         =   -1  'True
-            StripesBackColor=   14737632
-            RowHeight       =   315
-            SaveGridBars    =   -1  'True
-            SaveGridStripes =   0   'False
-            Caption         =   "Produtos"
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Arial"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
+            _extentx        =   0
+            _extenty        =   0
+            editbackcolor   =   16777152
+            edittextcolor   =   -2147483640
+            celltextcolor   =   -2147483640
+            stripes         =   -1
+            stripesbackcolor=   14737632
+            rowheight       =   315
+            savegridbars    =   -1
+            caption         =   "Produtos"
+            font            =   "NOTAFISC.frx":008C
          End
          Begin IRRIG.GListV Grid 
             Height          =   4785
@@ -1447,26 +1438,17 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   450
             Width           =   14385
-            _ExtentX        =   0
-            _ExtentY        =   0
-            EditBackColor   =   16777152
-            EditTextColor   =   -2147483640
-            CellTextColor   =   -2147483640
-            Stripes         =   -1  'True
-            StripesBackColor=   14737632
-            RowHeight       =   315
-            SaveGridBars    =   -1  'True
-            SaveGridStripes =   0   'False
-            Caption         =   "Serviços"
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Arial"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
+            _extentx        =   0
+            _extenty        =   0
+            editbackcolor   =   16777152
+            edittextcolor   =   -2147483640
+            celltextcolor   =   -2147483640
+            stripes         =   -1
+            stripesbackcolor=   14737632
+            rowheight       =   315
+            savegridbars    =   -1
+            caption         =   "Serviços"
+            font            =   "NOTAFISC.frx":00B0
          End
          Begin VB.CommandButton bottxtCampo27 
             Height          =   270
@@ -1508,26 +1490,17 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   855
             Width           =   14385
-            _ExtentX        =   0
-            _ExtentY        =   0
-            EditBackColor   =   16777152
-            EditTextColor   =   -2147483640
-            CellTextColor   =   -2147483640
-            Stripes         =   -1  'True
-            StripesBackColor=   14737632
-            RowHeight       =   315
-            SaveGridBars    =   -1  'True
-            SaveGridStripes =   0   'False
-            Caption         =   "Conjuntos"
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Arial"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
+            _extentx        =   0
+            _extenty        =   0
+            editbackcolor   =   16777152
+            edittextcolor   =   -2147483640
+            celltextcolor   =   -2147483640
+            stripes         =   -1
+            stripesbackcolor=   14737632
+            rowheight       =   315
+            savegridbars    =   -1
+            caption         =   "Conjuntos"
+            font            =   "NOTAFISC.frx":00D4
          End
          Begin IRRIG.GListV Grid 
             Height          =   4800
@@ -1537,26 +1510,17 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   480
             Width           =   14385
-            _ExtentX        =   0
-            _ExtentY        =   0
-            EditBackColor   =   16777152
-            EditTextColor   =   -2147483640
-            CellTextColor   =   -2147483640
-            Stripes         =   -1  'True
-            StripesBackColor=   14737632
-            RowHeight       =   315
-            SaveGridBars    =   -1  'True
-            SaveGridStripes =   0   'False
-            Caption         =   "Peças"
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Arial"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
+            _extentx        =   0
+            _extenty        =   0
+            editbackcolor   =   16777152
+            edittextcolor   =   -2147483640
+            celltextcolor   =   -2147483640
+            stripes         =   -1
+            stripesbackcolor=   14737632
+            rowheight       =   315
+            savegridbars    =   -1
+            caption         =   "Peças"
+            font            =   "NOTAFISC.frx":00F8
          End
          Begin VB.CommandButton bottxtCampo28 
             Height          =   270
@@ -1656,27 +1620,18 @@ Begin VB.Form frmNotaFisc
             Tag             =   "1"
             Top             =   750
             Width           =   4515
-            _ExtentX        =   0
-            _ExtentY        =   0
-            EditBackColor   =   16777152
-            EditTextColor   =   -2147483640
-            CellTextColor   =   -2147483640
-            Stripes         =   -1  'True
-            StripesBackColor=   14737632
-            RowHeight       =   315
-            ShowGridCaption =   0   'False
-            SaveGridBars    =   -1  'True
-            SaveGridStripes =   0   'False
-            Caption         =   ""
-            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-               Name            =   "Arial"
-               Size            =   9
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
+            _extentx        =   0
+            _extenty        =   0
+            editbackcolor   =   16777152
+            edittextcolor   =   -2147483640
+            celltextcolor   =   -2147483640
+            stripes         =   -1
+            stripesbackcolor=   14737632
+            rowheight       =   315
+            showgridcaption =   0
+            savegridbars    =   -1
+            caption         =   ""
+            font            =   "NOTAFISC.frx":011C
          End
          Begin VB.CheckBox ChkCp 
             Caption         =   "NFe Complementar"
@@ -5294,31 +5249,22 @@ Begin VB.Form frmNotaFisc
       TabIndex        =   257
       Top             =   330
       Width           =   1575
-      _ExtentX        =   2778
-      _ExtentY        =   1402
-      FullRowSelect   =   0   'False
-      StripesBackColor=   14737632
-      RowHeight       =   285
-      AllowEdit       =   -1  'True
-      AllowInsert     =   -1  'True
-      AllowDelete     =   -1  'True
-      ManualUpdate    =   -1  'True
-      ManualDelete    =   -1  'True
-      NavigationAddMode=   1
-      ShowFilterBar   =   -1  'True
-      ShowGridCaption =   0   'False
-      SaveGridStripes =   0   'False
-      Caption         =   ""
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      CacheSize       =   100
+      _extentx        =   2778
+      _extenty        =   1402
+      fullrowselect   =   0
+      stripesbackcolor=   14737632
+      rowheight       =   285
+      allowedit       =   -1
+      allowinsert     =   -1
+      allowdelete     =   -1
+      manualupdate    =   -1
+      manualdelete    =   -1
+      navigationaddmode=   1
+      showfilterbar   =   -1
+      showgridcaption =   0
+      caption         =   ""
+      font            =   "NOTAFISC.frx":0140
+      cachesize       =   100
    End
    Begin VB.Timer timUnLoad 
       Enabled         =   0   'False
@@ -5422,7 +5368,7 @@ Public txtIE As Object, txtEndereco As Object, txtRGIE As Object
 Public txtDtSaida As Object, Bruto As Object, GrdProdutos As Object
 Public grdServicos As Object, grdConjuntos As Object, grdPecas As Object
 Public txtForma_de_Pagamento As Object, lblParcelamento As Object, Grdparcelamento As Object
-Public Ncm As Object, txtEmbarque As Object, txtPais As Object
+Public NCM As Object, txtEmbarque As Object, txtPais As Object
 Public lblNota2 As Object, lblAjuste As Object, lblNota As Object
 Public lblNNota As Object, txtPropriedade As Object, txtOrigem1 As Object
 Public txtOrigem2 As Object, txtContrato As Object, Lbl_livro As Object
@@ -5671,7 +5617,7 @@ Private Function InfoProdutos(Valor_do_Tributo As Double, Sequencia_da_Nota_Fisc
       
    Select Case Oq
       Case "NCM"
-         InfoProdutos = ProdutoNCMAux!Ncm
+         InfoProdutos = ProdutoNCMAux!NCM
       Case "Sigla"
          InfoProdutos = ProdutoUnidadeAux![Sigla da Unidade]
       Case "Valor Unitário"
@@ -5717,7 +5663,7 @@ Private Function InfoConjuntos(Sequencia_da_Nota_Fiscal As Long, Sequencia_Conju
    
    Select Case Oq
       Case "NCM"
-         InfoConjuntos = ConjuntoNCMAux!Ncm
+         InfoConjuntos = ConjuntoNCMAux!NCM
       Case "Sigla"
          InfoConjuntos = ConjuntoUnidadeAux![Sigla da Unidade]
       Case "Valor Unitário"
@@ -5747,7 +5693,7 @@ Private Function InfoPecas(Sequencia_da_Nota_Fiscal As Long, Sequencia_da_Peca_N
    
    Select Case Oq
       Case "NCM"
-         InfoPecas = PecasNCMAux!Ncm
+         InfoPecas = PecasNCMAux!NCM
       Case "Sigla"
          InfoPecas = PecasUnidadeAux![Sigla da Unidade]
       Case "Valor Unitário"
@@ -7313,7 +7259,7 @@ End If
    Do While Not Itens.EOF
       If Vazio(Itens!Descrição) Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Descrição"
       If Vazio(Itens![Sigla da Unidade]) Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Unidade"
-      If Vazio(Itens!Ncm) And FinNFe <> 3 Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Classificação Fiscal (NCM)"
+      If Vazio(Itens!NCM) And FinNFe <> 3 Then i = i + 1: ReDim Preserve Vector(i): Vector(i - 1) = "ITEM: " & Itens![Seqüência do Produto] & " - Classificação Fiscal (NCM)"
       Itens.MoveNext
    Loop
       
@@ -7340,11 +7286,7 @@ End If
       End If
    End If
    
-   
-   ' If Parametros_da_NFe!ambiente <> 0 Then
-   '        Parametros_da_NFe![Diretório 1 NFe Homologação] = "C:\VERSOES DO SISTEMA\XML HOMOLOG IRRIG\"
-    '   End If
-    BlasterNFe400
+    GerarXmlNFe
    
 DeuErro:
    If Err <> 0 Then
@@ -7842,14 +7784,14 @@ Private Sub SuperAcao()
 End Sub
 
 Private Function PegaNCMPadrao() As Long
-   Dim Ncm As New GRecordSet
+   Dim NCM As New GRecordSet
    
    On Error Resume Next
    
-   Set Ncm = vgDb.OpenRecordSet("SELECT [Seqüência da Classificação] FROM [Classificação Fiscal] WHERE NCM = 84248229")
+   Set NCM = vgDb.OpenRecordSet("SELECT [Seqüência da Classificação] FROM [Classificação Fiscal] WHERE NCM = 84248229")
    
-   If Ncm.RecordCount > 0 Then
-      PegaNCMPadrao = Ncm![Seqüência da Classificação]
+   If NCM.RecordCount > 0 Then
+      PegaNCMPadrao = NCM![Seqüência da Classificação]
    End If
 
 End Function
@@ -8534,10 +8476,10 @@ Private Sub AtualizaValoresProdutos()
                    Nota_Fiscal![Seqüência da Propriedade], , , MunicipioAux!UF)
 
                 '---- nova regra: revenda .102 + NCM 84248 ? zera PIS/Cofins ----
-                If IsNull(![Ncm]) Then
+                If IsNull(![NCM]) Then
                     NCMProd = ""
                 Else
-                    NCMProd = ![Ncm]
+                    NCMProd = ![NCM]
                 End If
 
                 If Right(Trim(![CFOP]), 3) = "102" And Left(NCMProd, 5) = "84248" Then
@@ -8587,9 +8529,9 @@ End Sub
 'Retorna Ação Change' para 'CONJUNTO AVULSO
 Private Sub LimpaNcm()
    If Conjunto_Avulso = True Then
-      Ncm.Value = 0
+      NCM.Value = 0
    Else
-      Ncm.Value = 27
+      NCM.Value = 27
    End If
 End Sub
 
@@ -8883,19 +8825,18 @@ Private Sub GravaHistorico(txt As String)
 End Sub
 
 'Gera a chave de acesso concatenando os campos da NFe
-Private Function MontaChaveAcessoNF(cUF As String, Ano As String, Mes As String, _
-   emiCNPJ As String, modelo As String, serie As String, Numero As String, _
-   tpEmis As String, cNF As String, ByRef cDV As String) As String
-   Dim chaveSemDV As String
-   chaveSemDV = cUF & Ano & Mes & emiCNPJ & modelo & serie & Numero & tpEmis & cNF
-   cDV = GDVChaveNFe(chaveSemDV)           'calcula o digito verificador pelo modulo 11 (2 a 9)
-   MontaChaveAcessoNF = chaveSemDV & cDV
-End Function
+'Private Function MontaChaveAcessoNF(cUF As String, Ano As String, Mes As String, _
+   'emiCNPJ As String, modelo As String, serie As String, Numero As String, _
+   'tpEmis As String, cNF As String, ByRef cDV As String) As String
+   'Dim chaveSemDV As String
+   'chaveSemDV = cUF & Ano & Mes & emiCNPJ & modelo & serie & Numero & tpEmis & cNF
+  ' cDV = GDVChaveNFe(chaveSemDV)           'calcula o digito verificador pelo modulo 11 (2 a 9)
+ '  MontaChaveAcessoNF = chaveSemDV & cDV
+'End Function
 
 
-'layout 4.00
-    'ROTINA QUE MONTA O XML DA NOTA FISCAL ELETRONICA
-    Private Sub BlasterNFe400()
+'layout 5.00
+    Private Sub GerarXmlNFe()
        'DECLARAÇÃO DAS VARIÁVEIS
        '-------Variáveis Avulsas--------------
        Dim Item As New GRecordSet, Cliente As New GRecordSet, Transportadora As New GRecordSet, Propriedade As New GRecordSet
@@ -8911,6 +8852,38 @@ End Function
        Dim ide_verProc As String, ide_NFref As String, ide_dhCont As String, ide_xJust As String
        'Campos Novos Identificação do Documento Layout 3.10
        Dim ide_dhEmi As String, ide_dhSaiEnt As String, ide_idDest As Integer, ide_indFinal As Integer, ide_indPres As Integer
+       
+        'NF5X
+        'Campos opcionais para RTC (NF-e 5.0)
+        Dim ide_cMunFGIBS        As String    ' cMunFGIBS – município do fato gerador do IBS
+        Dim ide_tpNFDebito       As Long      ' tpNFDebito – tipo de nota de débito
+        Dim ide_tpNFCredito      As Long      ' tpNFCredito – tipo de nota de crédito
+        Dim ide_gCompraGov       As Long      ' gCompraGov – indicador de compra governamental
+        Dim ide_NFePagAntecipado As String    ' NFePagAntecipado – chave da NF-e original em pagamento antecipado
+        
+        '— Novos campos exigidos pelos métodos produtoRTC e detalheRTC (layout 5.00) —
+        Dim credPresumido_Opc    As String    ' crédito presumido (se houver)
+        Dim indBemMovelUsado_Opc As Long      ' 1 = bem móvel usado; 0 = novo
+        Dim obsContItem_Opc      As String    ' observação do contribuinte no item
+        Dim obsFiscoItem_Opc     As String    ' observação do fisco no item
+        Dim vItem                As Double    ' valor total do item (override opcional)
+        Dim DFeReferenciado_Opc  As String    ' chave de documento fiscal referenciado
+        Dim gIBSTot    As String
+        Dim gCBSTot    As String
+        Dim gMonoTot   As String
+        Dim IBSCBSTot  As String    ' união dos grupos IBS/CBS/Mono
+        Dim vIS        As Double    ' total de Imposto Seletivo dos itens
+        'NF5X
+        '--- defaults gerais para os campos NF-e 5.0 --------------------------
+        credPresumido_Opc = ""       ' string vazia = não informado
+        indBemMovelUsado_Opc = 0     ' 0 = bem novo
+        obsContItem_Opc = ""         ' sem observação do contribuinte
+        obsFiscoItem_Opc = ""        ' sem observação do fisco
+        vItem = 0                    ' deixa o método calcular, se ?0 força o valor
+        DFeReferenciado_Opc = ""     ' sem DF-e referenciado
+        '----------------------------------------------------------------------
+        'NF5X
+       
        '======Chave da NFe===========
        Dim resultado As Long
         Dim emi_CNPJ As String, cUF As String, Ano As String, Mes As String
@@ -8935,13 +8908,18 @@ End Function
        '======Identificação do Produtos/Serviços=====
        Dim det_nItem As Long, det_produto As String, det_imposto As String
        Dim Prod_cProd As String, Prod_cEAN As String, Prod_xProd As String, Prod_NCM As String, Prod_ExTIPI As String
-       Dim Prod_CFOP As String, Prod_uCOM As String, Prod_qCom As String, Prod_vUnCom As String, Prod_vProd As String
+       
+       'NF5X - ALTERADO CFOP PARA LONG
+       Dim Prod_CFOP As Long, Prod_uCOM As String, Prod_qCom As String, Prod_vUnCom As String, Prod_vProd As String
+       'NF5X
+       
+       
        Dim Prod_cEANTrib As String, Prod_uTrib As String, Prod_qTrib As String, Prod_vUnTrib As String, Prod_DI As String
        Dim Prod_DetEspecifico As String, Prod_xPed As String, Prod_vFrete As Double, Prod_Ad As String
        Dim Prod_vSeguro As Double, Prod_vDesc As Double, Prod_vOutro As Double, Prod_indTot As Byte, Prod_nItemPed As Integer
        Dim TotalDosItens As Double, PercentualRateio As Double, Prod_Cest As String
        'Layout 4.00
-       Dim IndEscala_Opc As String, CNPJFab_Opc As String, cBenef_Opc As String, Rastro_Opc As String
+       Dim indEscala_Opc As String, CNPJFab_Opc As String, cBenef_Opc As String, rastro_Opc As String
        '=========Serviços==================
        Dim det_Servicos As String, cServico As String, xServico As String, Serv_NCM As String, Serv_CFOP As String
        Dim Serv_uCOM As String, Serv_qCOM As String, Serv_vUnCOM As String, vServ As Double, Serv_uTrib As String
@@ -9141,6 +9119,12 @@ If Parametros_da_NFe![Horario de Verao] Then
 Else
    ide_dhEmi = Format(Me.txtCp(68), "yyyy-MM-ddThh:mm:ss") & "-03:00"
 End If
+
+'NF5X
+' monta data/hora de saída (precisa existir, mesmo que seja igual à de emissão)
+ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horario de Verao], "-02:00", "-03:00")
+'NF5X
+
        'A IRRIGAÇÃO NW MANDA COM DATA E HORA DE SAÍDA
        ide_tpNF = IIf(Nota_Fiscal![Tipo de Nota] = 0, 1, 0) ' Tipo de NF 0 = Entrada 1 = Saida
        ide_cMunFG = "3537305"                    ' código do município do IBGE de ocorrência do FG do ICMS (Penápolis)
@@ -9240,9 +9224,13 @@ End If
        If Nota_Fiscal![Nota de Devolução] And Chave_da_Devolucao_3 <> "" Then
           ide_NFRefs = ide_NFRefs + objNFeUtil.NFeRef(Nota_Fiscal![Chave da Devolução 3])
        End If
+
+      'NF5X
+    ide = objNFeUtil.identificadorRTCVFP(ide_cUF, ide_cNF, ide_natOp, ide_mode, ide_serie, ide_nNF, ide_dhEmi, ide_dhSaiEnt, ide_tpNF, ide_idDest, ide_cMunFG, ide_NFRefs, ide_tpImp, ide_tpEmis, ide_cDV, ide_tpAmb, ide_finNFe, ide_indFinal, ide_indPres, ide_procEmi, ide_verProc, ide_dhCont, ide_xJust, 0, ide_cMunFGIBS & "|" & ide_tpNFDebito & "|" & ide_tpNFCredito & "|" & ide_gCompraGov & "|" & ide_NFePagAntecipado)
+
+      'NF5X
+      
        
-       
-         ide = objNFeUtil.identificador202006(ide_cUF, ide_cNF, ide_natOp, ide_mode, ide_serie, ide_nNF, ide_dhEmi, ide_dhSaiEnt, ide_tpNF, ide_idDest, ide_cMunFG, ide_NFRefs, ide_tpImp, ide_tpEmis, ide_cDV, ide_tpAmb, ide_finNFe, ide_indFinal, ide_indPres, ide_procEmi, ide_verProc, ide_dhCont, ide_xJust, 0)
        '=====Grupo de Identificação do Emitente (Grupo B do Manual de Integração 4.01-NT2009/006 - página 113)=======
        '        <>&" são caracteres reservados do XML e devem ser evitados ou substituídos
        If Parametros_da_NFe!ambiente = 0 Then
@@ -9402,11 +9390,15 @@ End If
              'LEMBRANDO: Se for colocar esse campo na NFe, alguns Código de Barras está incorreto arrumar antes
              Prod_cEAN = "SEM GTIN"   'Item![Código de Barras]         ' código EAN (0, 8,12, 13 ou 14 caracteres), o conteúdo pode ser omitido se não tiver EAN
              Prod_xProd = SuperTiraAcentos(Substitui(Trim(Item![Descrição Produto]), "&", "E", UM_A_UM)) ' código do produto, espaços em branco consecutivos ou no início ou fim do campo podem gerar erro de Schema XML, além de caracteres reservados do XML <>&"'
-             Prod_NCM = IIf(FinNFe = 3, "00", Item!Ncm)
+             Prod_NCM = IIf(FinNFe = 3, "00", Item!NCM)
              Prod_Cest = Item!Cest
              Prod_NVE_Opc = ""                           ' Campo Opcional
              Prod_ExTIPI = ""                            ' ExTipi, informar de acordo com o código EX da TIPI se houver para o NCM do produto.
-             Prod_CFOP = Item!CFOP                       ' CFOP do operação, causa erro de XML se informado um código inexistente
+             
+             'NF5X
+             Prod_CFOP = CLng(Item!CFOP)
+             
+             
              If Mid(NatOpe![Código da Natureza de Operação], 1, 1) = "7" Then
                 Prod_uCOM = Item!UnidEx                  ' unidade de comercialização no Exterior
              Else
@@ -9494,12 +9486,16 @@ End If
           
              'Gera Grupo do Produto
              'det_produto = objNFeUtil.produtoNT2015003(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, prod_nFCI_Opc)
-             'Layout 4.00
-             IndEscala_Opc = ""
+             'Layout 5.00
+             indEscala_Opc = ""
              CNPJFab_Opc = ""
              cBenef_Opc = ""
-             Rastro_Opc = ""
-             det_produto = objNFeUtil.produto400(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, IndEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, Rastro_Opc)
+             rastro_Opc = ""
+                  
+             'NF5X
+             det_produto = objNFeUtil.produtoRTC(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, indEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, rastro_Opc, credPresumido_Opc, indBemMovelUsado_Opc)
+
+             
              '========Grupo de Informações do Imposto do Item=========
              
              '=========Dados do ICMS (Grupo N01 do Manual de Integração - Páginas 128-)=====================
@@ -9722,7 +9718,10 @@ End If
              Det_vIPIDevol = 0 ' Campo Opcional uhuu
              
              'Gera Grupo de Detalhamento do Produto
-             Detalhes = Detalhes & objNFeUtil.detalhe310(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol)
+             
+             Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", 0, "")
+
+             
              Item.MoveNext
           Loop
        End If
@@ -9756,9 +9755,14 @@ End If
        Serv_qTrib = Servicos!Quantidade
        Serv_vUnTrib = Servicos![Valor Unitário]
        Serv_indTot = 0
-      'Gera Grupo do Serviço
-      ' det_Servicos = objNFeUtil.produtoNT2015003(cServico, "", xServico, Serv_NCM, "", "", "", Serv_CFOP, Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "")
-       det_Servicos = objNFeUtil.produto400(cServico, "SEM GTIN", xServico, Serv_NCM, "", "", "", "", "", "", Serv_CFOP, Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "SEM GTIN", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "", "")
+      
+       
+       'NF5X
+       det_Servicos = objNFeUtil.produtoRTC(cServico, "SEM GTIN", xServico, Serv_NCM, "", "", "", "", "", "", CLng(Serv_CFOP), Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "SEM GTIN", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "", "", "", 0)
+
+       
+       
+       
        '========Grupo de Informações do Imposto dos Serviços=========
        '========Dados ISSQN=======================================
        Serv_BC = Servicos![Valor Total] - Serv_Desc
@@ -9794,7 +9798,10 @@ End If
        Det_pDevol = 0
        Det_vIPIDevol = 0
        'Gera Grupo de Detalhamento dos Serviços
-       Detalhes = Detalhes & objNFeUtil.detalhe310(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol)
+       
+       'NF5X
+       Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol, "", "", 0, "")
+       
        Servicos.MoveNext
        Loop
        End If
@@ -9846,13 +9853,17 @@ OcultaValor:
        Prod_nItemPed = 0                           ' número do item do pedido, uso exclusivo do usuário
        Prod_nFCI_Opc = ""                          ' Campo Novo Layout 3.10 Opcional
        'Layout 4.00
-       IndEscala_Opc = ""
+       indEscala_Opc = ""
        CNPJFab_Opc = ""
        cBenef_Opc = ""
-       Rastro_Opc = ""
+       rastro_Opc = ""
        
        'Gera Grupo do Produto
-        det_produto = objNFeUtil.produto400(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, IndEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, Prod_CFOP, Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, Rastro_Opc)
+       
+       'NF5X
+       det_produto = objNFeUtil.produtoRTC(Prod_cProd, Prod_cEAN, Prod_xProd, Prod_NCM, Prod_NVE_Opc, Prod_Cest, indEscala_Opc, CNPJFab_Opc, cBenef_Opc, Prod_ExTIPI, CLng(Prod_CFOP), Prod_uCOM, Prod_qCom, Prod_vUnCom, Prod_vProd, Prod_cEANTrib, Prod_uTrib, Prod_qTrib, Prod_vUnTrib, Prod_vFrete, Prod_vSeguro, Prod_vDesc, Prod_vOutro, Prod_indTot, Prod_DI, Prod_detExport_Opc, Prod_DetEspecifico, Prod_xPed, Prod_nItemPed, Prod_nFCI_Opc, rastro_Opc, credPresumido_Opc, indBemMovelUsado_Opc)
+        
+       
        
        '========Grupo de Informações do Imposto do Item=========
           
@@ -10049,7 +10060,9 @@ OcultaValor:
        Det_pDevol = 0    ' Campo Opcional uhuu
        Det_vIPIDevol = 0 ' Campo Opcional uhuu
        'Gera Grupo de Detalhamento do Produto
-       Detalhes = Detalhes & objNFeUtil.detalhe310(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol)
+       
+       'NF5X
+      Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", 0, "")
     
        Do While Not Item.EOF
           If LayoutAntigo Then
@@ -10067,7 +10080,12 @@ OcultaValor:
           Prod_ExTIPI = ""                            ' ExTipi, informar de acordo com o código EX da TIPI se houver para o NCM do produto.
           'De Acordo com o que foi passado os itens do conjunto deve sair com o mesmo CFOP do Conjunto
           'A linha de Baixa eu até poderia comentar mas pra deixar claro que estou colocando o mesmo CFOP do Conjunto
-          Prod_CFOP = Prod_CFOP                       ' CFOP do operação, causa erro de XML se informado um código inexistente
+          
+          'NF5X
+          Prod_CFOP = CLng(Item!CFOP)
+          
+          
+          
           Prod_uCOM = Item![Descrição Unidade]        ' unidade de comercialização
           Prod_qCom = Item!Quantidade                 ' quantidade de comercialização
           Prod_vUnCom = 0                             ' valor unitário de comercialização, campo de mera demonstração deve ser o resultado da divisão do vProd / qCom
@@ -10256,7 +10274,11 @@ OcultaValor:
           Det_vIPIDevol = 0 ' Campo Opcional uhuu
           'Gera Grupo de Detalhamento do Produto
           If LayoutAntigo Then
-          Detalhes = Detalhes & objNFeUtil.detalhe310(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol)
+          
+          'NF5X
+          Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_produto, det_imposto, det_infAdProd, Det_pDevol, Det_vIPIDevol, "", "", 0, "")
+
+          
           End If
           Item.MoveNext
        Loop
@@ -10291,8 +10313,11 @@ OcultaValor:
        Serv_vUnTrib = Servicos![Valor Unitário]
        Serv_indTot = 0
       'Gera Grupo do Serviço
-       'det_Servicos = objNFeUtil.produtoNT2015003(cServico, "", xServico, Serv_NCM, "", "", "", Serv_CFOP, Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "")
-        det_Servicos = objNFeUtil.produto400(cServico, "SEM GTIN", xServico, Serv_NCM, "", "", "", "", "", "", Serv_CFOP, Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "SEM GTIN", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "", "")
+       
+       
+       'NF5X
+       det_Servicos = objNFeUtil.produtoRTC(cServico, "SEM GTIN", xServico, Serv_NCM, "", "", "", "", "", "", CLng(Serv_CFOP), Serv_uCOM, Serv_qCOM, Serv_vUnCOM, vServ, "SEM GTIN", Serv_uTrib, Serv_qTrib, Serv_vUnTrib, 0, 0, Serv_Desc, 0, Serv_indTot, "", "", "", "", "", "", "", "", 0)
+       
        '========Grupo de Informações do Imposto dos Serviços=========
        '========Dados ISSQN=======================================
        Serv_BC = Servicos![Valor Total] - Serv_Desc
@@ -10328,7 +10353,12 @@ OcultaValor:
        Det_pDevol = 0
        Det_vIPIDevol = 0
        'Gera Grupo de Detalhamento dos Serviços
-       Detalhes = Detalhes & objNFeUtil.detalhe310(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol)
+       
+       'NF5X
+       Detalhes = Detalhes & objNFeUtil.detalheRTC(det_nItem, det_Servicos, det_imposto, "", Det_pDevol, Det_vIPIDevol, "", "", 0, "")
+
+       
+       
        Servicos.MoveNext
        Loop
        End If
@@ -10386,18 +10416,47 @@ Continua:
         TotvFCPSTRet = 0
         TotvIPIDevol = 0
        '=================
-        If Item.RecordCount = 0 Then
-           TotalICMS = objNFeUtil.totalICMS400(0, 0, 0, 0, 0, 0, 0, vDesc, 0, 0, 0, 0, 0, vNF, vTotTrib, 0, 0, 0, 0, 0, 0, 0, 0)
-        Else
-           TotalICMS = objNFeUtil.totalICMS400(vBC, vICMS, vBCST, vST, vProd, vFrete, vSeg, vDesc, vII, vIPI, vPIS, vCOFINS, vOutro, vNF, vTotTrib, vICMSDeson, TotICMSUFDest, TotICMSUFRemet, TotvFCPUFDest, TotvFCP, TotvFCPST, TotvFCPSTRet, TotvIPIDevol)
-        End If
-        If Servicos.RecordCount > 0 Then
-           ISSQNTot = objNFeUtil.totalISS310(totServ, totBCISS, totISS, totPisISS, totCofinsISS, dCompet, 0, 0, 0, TotDescISS, 0, "")
-        Else
-           ISSQNTot = ""
-        End If
-       'Gera Totais da NFe
-        Total = objNFeUtil.Total(TotalICMS, ISSQNTot, retTrib)
+        
+        
+       
+       'Gera Totais da NFe (NF-e 5.0)
+'NF5X
+'– 1) Já estavam os totais de ICMS e ISS:
+If Item.RecordCount = 0 Then
+   TotalICMS = objNFeUtil.totalICMS400(0, 0, 0, 0, 0, 0, 0, vDesc, 0, 0, 0, 0, 0, vNF, vTotTrib, 0, 0, 0, 0, 0, 0, 0, 0)
+Else
+   TotalICMS = objNFeUtil.totalICMS400(vBC, vICMS, vBCST, vST, vProd, vFrete, vSeg, vDesc, vII, vIPI, vPIS, vCOFINS, vOutro, vNF, vTotTrib, vICMSDeson, TotICMSUFDest, TotICMSUFRemet, TotvFCPUFDest, TotvFCP, TotvFCPST, TotvFCPSTRet, TotvIPIDevol)
+End If
+
+If Servicos.RecordCount > 0 Then
+    ISSQNTot = objNFeUtil.totalISS310(totServ, totBCISS, totISS, totPisISS, totCofinsISS, dCompet, 0, 0, 0, TotDescISS, 0, "")
+Else
+   ISSQNTot = ""
+End If
+
+'– 2) Monta os grupos IBS/CBS/Mono (opcional) :contentReference[oaicite:0]{index=0}
+If usoIBS Or usoCBS Then
+    gIBSTot = objNFeUtil.gIBSTot(vDifUF, vDevTribUF, vIBSUF, vDifMun, vDevTribMun, vIBSMun, vIBS, vCredPresIBS, vCredPresCondSusIBS)
+    gCBSTot = objNFeUtil.gCBSTot(vDifCBS, vDevTribCBS, vCBS, vCredPresCBS, vCredPresCondSusCBS)
+    gMonoTot = objNFeUtil.gMonoTot(vIBSMono, vCBSMono, vIBSMonoReten, vCBSMonoReten, vIBSMonoRet, vCBSMonoRet)
+    IBSCBSTot = objNFeUtil.IBSCBSTot(vBCIBSCBS, gIBSTot, gCBSTot, gMonoTot)
+Else
+    IBSCBSTot = ""
+End If
+
+'– 3) Total de Imposto Seletivo (quando houver) :contentReference[oaicite:1]{index=1}
+vIS = TotIS
+
+'– 4) Chama totalRTC com 6 parâmetros (NF-e 5.0) :contentReference[oaicite:2]{index=2}'
+Total = objNFeUtil.totalRTC( _
+            TotalICMS, _
+            ISSQNTot, _
+            retTrib, _
+            vIS, _
+            IBSCBSTot, _
+            vNF)
+
+
        
        '=========Dados da Transportadora=====================
        If Not Nota_Fiscal![Transportadora Avulsa] Then
@@ -10617,7 +10676,7 @@ End If
        
        '=========Dados da Nota Fiscal Eletrônica=====================
        Id = chaveNFe
-       versao = "4.00"
+       versao = "5.00"
        autXML = ""
        'ufa finalmente
        'Gera Consolidação da NFe
@@ -10666,7 +10725,7 @@ SaiDaSub:
        Else
           lblProgresso.Caption = "AMBIENTE NFe EM MODO TESTE"
        End If
-    End Sub
+    End Function
 
 
 Private Sub DataSaida()
@@ -12068,7 +12127,7 @@ Private Sub Form_Load()
    Set txtForma_de_Pagamento = txtCampo(28)
    Set lblParcelamento = Label(9)
    Set Grdparcelamento = Grid(4)
-   Set Ncm = txtCampo(49)
+   Set NCM = txtCampo(49)
    Set txtEmbarque = txtCampo(50)
    Set txtPais = txtCampo(51)
    Set lblNota2 = Label(73)
@@ -13497,7 +13556,7 @@ Private Sub Form_Unload(Cancel As Integer)
    Set txtForma_de_Pagamento = Nothing
    Set lblParcelamento = Nothing
    Set Grdparcelamento = Nothing
-   Set Ncm = Nothing
+   Set NCM = Nothing
    Set txtEmbarque = Nothing
    Set txtPais = Nothing
    Set lblNota2 = Nothing
