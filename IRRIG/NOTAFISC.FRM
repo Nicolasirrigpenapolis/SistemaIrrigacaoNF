@@ -8840,7 +8840,7 @@ End Sub
 
 'layout 5.00
     Private Sub GerarXmlNFe()
-       'DECLARAÇÃO DAS VARIÁVEIS
+              'DECLARAÇÃO DAS VARIÁVEIS
        '-------Variáveis Avulsas--------------
        Dim Item As New GRecordSet, Cliente As New GRecordSet, Transportadora As New GRecordSet, Propriedade As New GRecordSet
        Dim NatOpe As New GRecordSet, Parcelas As New GRecordSet, objNFeUtil As Object, MunTransAvulsa As New GRecordSet
@@ -8856,6 +8856,8 @@ End Sub
        'Campos Novos Identificação do Documento Layout 3.10
        Dim ide_dhEmi As String, ide_dhSaiEnt As String, ide_idDest As Integer, ide_indFinal As Integer, ide_indPres As Integer
        
+       
+       
         'NF5X
         'Campos opcionais para RTC (NF-e 5.0)
         Dim cMunFGIBS_Opc        As String
@@ -8864,7 +8866,33 @@ End Sub
         Dim gCompraGov_Opc       As String
         Dim NFePagAntecipado_Opc As String
         
-        
+        '--- controla uso de IBS/CBS no imposto RTC (corrigido) ---
+    Dim usoIBS As Boolean, usoCBS As Boolean
+    Dim vIBS As Double, vCBS As Double
+    Dim vDifUF                As Double
+Dim vDevTribUF            As Double
+Dim vIBSUF                As Double
+Dim vDifMun               As Double
+Dim vDevTribMun           As Double
+Dim vIBSMun               As Double
+Dim vCredPresIBS          As Double
+Dim vCredPresCondSusIBS   As Double
+
+Dim vDifCBS               As Double
+Dim vDevTribCBS           As Double
+Dim vCredPresCBS          As Double
+Dim vCredPresCondSusCBS   As Double
+
+Dim vIBSMono              As Double
+Dim vCBSMono              As Double
+Dim vIBSMonoReten         As Double
+Dim vCBSMonoReten         As Double
+Dim vIBSMonoRet           As Double
+Dim vCBSMonoRet           As Double
+
+Dim vBCIBSCBS             As Double
+
+    
         '— Novos campos exigidos pelos métodos produtoRTC e detalheRTC (layout 5.00) —
         Dim credPresumido_Opc    As String    ' crédito presumido (se houver)
         Dim indBemMovelUsado_Opc As Long      ' 1 = bem móvel usado; 0 = novo
@@ -9030,6 +9058,10 @@ End Sub
        'Partilha 4.00
        Dim vBCFCPUFDest_Opc As Double
        Dim xmlDetPag As String
+       
+       
+       Dim chave     As String
+                  
           
        'Bora lah Blaster
        On Error GoTo DeuErro
@@ -9210,27 +9242,32 @@ ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horar
           End If
        End If
        
-       'Gera a Chave de Acesso da NFe
-       'Utilizar a Função CriaChaveNFe para Gerar a Chave de Acesso, Código da NFe e DV
-       emi_CNPJ = "02781892000130"
-       cUF = Format$(ide_cUF, "00")
+      ' Gera a Chave de Acesso da NFe
+        emi_CNPJ = "02781892000130"
+        cUF = Format$(ide_cUF, "00")
         Ano = Mid$(ide_dhEmi, 3, 2)
         Mes = Mid$(ide_dhEmi, 6, 2)
         modelo = Format$(ide_mode, "00")
         serie = Format$(ide_serie, "000")
         Numero = Format$(ide_nNF, "000000000")
         tpEmis = Format$(ide_tpEmis, "0")
-       codigoseguranca = "segredo"     ' informar uma expressão para garantir o sigilo da forma de cálculo do cNF
         
-       Set objNFeUtil = CreateObject("NFe_Util_2G.Util")
+        Set objNFeUtil = CreateObject("NFe_Util_2G.Util")
         
-       Randomize Timer
-   cNF = Format$(Int(Rnd * 100000000), "00000000")
-   chaveNFe = MontaChaveAcessoNF(cUF, Ano, Mes, emi_CNPJ, modelo, serie, Numero, tpEmis, cNF, cDV)
+        Randomize Timer
+        cNF = Format$(Int(Rnd * 100000000), "00000000")
         
-       ide_cNF = cNF    ' mantém os 8 dígitos, mesmo que comece com zero
-        ide_cDV = cDV    ' mantém o dígito verificador
-         'Guarda a chave gerada na tabela e no campo visual
+        ' --- aqui usamos o método interno em vez da função externa ---
+        chaveNFe = objNFeUtil.CriaChaveNFe2G( _
+            cUF, Ano, Mes, emi_CNPJ, _
+            modelo, serie, Numero, _
+            tpEmis, cNF _
+        )
+        
+        ide_cNF = cNF
+        ide_cDV = Right$(chaveNFe, 1)    ' último caractere é o dígito verificador
+        
+        ' guarda e exibe
         Chave_de_Acesso_da_NFe = chaveNFe
         txtCampo(31).Value = chaveNFe
         With vgTb
@@ -9239,6 +9276,7 @@ ide_dhSaiEnt = Format(Now, "yyyy-MM-ddThh:mm:ss") & IIf(Parametros_da_NFe![Horar
            .Update
            .BookMark = .LastModified
         End With
+
 
        
        'Gera Grupo NFeRef
@@ -10543,7 +10581,7 @@ Continua:
        vICMSDeson = 0
        vIBS = Nota_Fiscal![TotalIBS]
        vCBS = Nota_Fiscal![TotalCBS]
-       TotIS = Nota_Fiscal![TotalImpostoSeletivo]
+       vIS = Nota_Fiscal![TotalImpostoSeletivo]
        'Gera Total ICMS
        'Lei da Transparencia
        'Layout 4.00
@@ -10581,7 +10619,7 @@ Else
 End If
 
 '– 3) Total de Imposto Seletivo (quando houver) :contentReference[oaicite:1]{index=1}
-vIS = TotIS
+vIS = vIS
 
 '– 4) Chama totalRTC com 6 parâmetros (NF-e 5.0) :contentReference[oaicite:2]{index=2}'
 Total = objNFeUtil.totalRTC( _
@@ -10861,7 +10899,8 @@ SaiDaSub:
        Else
           lblProgresso.Caption = "AMBIENTE NFe EM MODO TESTE"
        End If
-    End Function
+  
+End Sub
 
 
 Private Sub DataSaida()
